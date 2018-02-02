@@ -2,6 +2,7 @@
   "name": "bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "4.0.0",
+  "rtl-revision": "1",
   "keywords": [
     "css",
     "sass",
@@ -9,7 +10,8 @@
     "responsive",
     "front-end",
     "framework",
-    "web"
+    "web",
+    "rtl"
   ],
   "homepage": "https://getbootstrap.com",
   "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
@@ -66,10 +68,21 @@
     "test": "npm-run-all dist js-test docs-compile docs-lint bundlesize",
     "watch": "npm-run-all --parallel watch-css watch-js",
     "watch-css": "nodemon --ignore js/ --ignore dist/ -e scss -x \"npm run css\"",
-    "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile\""
+    "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile\"",
+    "css-compile-rtl": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap.rtl.scss dist/css/bootstrap.rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid.rtl.scss dist/css/bootstrap-grid.rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot.rtl.scss dist/css/bootstrap-reboot.rtl.css",
+    "css-minify-rtl": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap.rtl.min.css dist/css/bootstrap.rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-grid.rtl.min.css dist/css/bootstrap-grid.rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot.rtl.min.css dist/css/bootstrap-reboot.rtl.css",
+    "release-sri-rtl": "node build/generate-sri-rtl.js",
+    "release-zip-rtl": "cd dist/ && zip -r9 bootstrap-$npm_package_version-dist-rtl.zip * && shx mv bootstrap-$npm_package_version-dist-rtl.zip ..",
+    "release-zip-rtl-win": "node build/release-zip-rtl-win-ps.js"
   },
-  "style": "dist/css/bootstrap.css",
-  "sass": "scss/bootstrap.scss",
+  "style": [
+    "dist/css/bootstrap.css",
+    "dist/css/bootstrap.rtl.css"
+  ],
+  "sass": [
+    "scss/bootstrap.scss",
+    "scss/bootstrap.rtl.scss"
+  ],
   "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
@@ -98,6 +111,7 @@
     "eslint-plugin-compat": "^2.2.0",
     "glob": "^7.1.2",
     "htmllint-cli": "^0.0.6",
+    "jshint": "^2.9.5",
     "jsunitsaucelabs": "^1.3.0",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
@@ -105,12 +119,12 @@
     "karma-firefox-launcher": "^1.1.0",
     "karma-qunit": "^1.2.1",
     "node-sass": "^4.7.2",
-    "nodemon": "^1.14.11",
+    "nodemon": "^1.14.12",
     "npm-run-all": "^4.1.2",
-    "popper.js": "^1.12.9",
+    "popper.js": "^1.13.0",
     "postcss-cli": "^4.1.1",
     "qunitjs": "^2.4.1",
-    "rollup": "^0.55.1",
+    "rollup": "^0.55.3",
     "rollup-plugin-babel": "4.0.0-beta.0",
     "rollup-plugin-node-resolve": "^3.0.2",
     "shelljs": "^0.8.1",
@@ -122,7 +136,7 @@
     "stylelint-order": "^0.8.0",
     "stylelint-scss": "^2.2.0",
     "uglify-js": "^3.3.9",
-    "vnu-jar": "^17.11.1",
+    "vnu-jar": "^17.12.28",
     "workbox-build": "^2.1.2"
   },
   "engines": {
@@ -155,6 +169,14 @@
       "maxSize": "5 kB"
     },
     {
+      "path": "./dist/css/bootstrap-grid.rtl.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-grid.rtl.min.css",
+      "maxSize": "5 kB"
+    },
+    {
       "path": "./dist/css/bootstrap-reboot.css",
       "maxSize": "3 kB"
     },
@@ -163,11 +185,27 @@
       "maxSize": "3 kB"
     },
     {
+      "path": "./dist/css/bootstrap-reboot.rtl.css",
+      "maxSize": "3 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-reboot.rtl.min.css",
+      "maxSize": "3 kB"
+    },
+    {
       "path": "./dist/css/bootstrap.css",
       "maxSize": "25 kB"
     },
     {
       "path": "./dist/css/bootstrap.min.css",
+      "maxSize": "21 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap.rtl.css",
+      "maxSize": "25 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap.rtl.min.css",
       "maxSize": "21 kB"
     },
     {
