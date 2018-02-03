@@ -37,12 +37,12 @@
   &:first-child {
     .page-link {
       margin-right: 0;//rtl
-      @include border-right-radius($border-radius);
+      @include border-right-radius($border-radius);//rtl
     }
   }
   &:last-child {
     .page-link {
-      @include border-left-radius($border-radius);
+      @include border-left-radius($border-radius);//rtl
     }
   }
 

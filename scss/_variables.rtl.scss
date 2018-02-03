@@ -132,7 +132,8 @@ $sizes: map-merge((
   25: 25%,
   50: 50%,
   75: 75%,
-  100: 100%
+  100: 100%,
+  auto: auto
 ), $sizes);
 // stylelint-enable
 
@@ -516,7 +517,10 @@ $custom-file-box-shadow:            $input-box-shadow !default;
 $custom-file-button-color:          $custom-file-color !default;
 $custom-file-button-bg:             $input-group-addon-bg !default;
 $custom-file-text: (
-  fa: "انتخاب"//rtl
+  en: "Browse",
+  fa: "از فهرست", //rtl: Persian
+  ar: "...", //rtl: Arabic (should be provided)
+  iw: "...", //rtl: Hebrew (should be provided)
 ) !default;
 
 
