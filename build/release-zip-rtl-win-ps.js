@@ -7,6 +7,6 @@ const packageJson = require('../package.json')
 const cmd = `powershell compress-archive -Path dist/* -CompressionLevel Optimal -DestinationPath bootstrap-${packageJson.version}-plus-rtl-rev.${packageJson['rtl-revision']}-dist.zip`
 
 if (shell.exec(cmd).code !== 0) {
-  shell.echo('Error: Git commit failed')
+  shell.echo('Error: Compression Failed!')
   shell.exit(1)
 }
