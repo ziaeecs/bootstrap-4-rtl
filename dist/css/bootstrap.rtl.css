@@ -360,6 +360,16 @@ template {
   display: none !important;
 }
 
+code,
+samp,
+[type="email"],
+[type="file"],
+[type="tel"],
+[type="url"] {
+  direction: ltr;
+  text-align: left;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -517,9 +527,7 @@ samp {
 code {
   font-size: 87.5%;
   color: #e83e8c;
-  text-align: left;
   word-break: break-word;
-  direction: ltr;
 }
 
 a > code {
@@ -550,11 +558,6 @@ pre code {
   font-size: inherit;
   color: inherit;
   word-break: normal;
-}
-
-samp {
-  direction: ltr;
-  text-align: left;
 }
 
 .pre-scrollable {
@@ -3323,6 +3326,12 @@ tbody.collapse.show {
   white-space: nowrap;
 }
 
+.dropdown-item-text {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  color: #212529;
+}
+
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -3819,8 +3828,20 @@ tbody.collapse.show {
   border-color: #80bdff;
 }
 
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Browse";
+}
+
 .custom-file-input:lang(fa) ~ .custom-file-label::after {
-  content: "انتخاب";
+  content: "از فهرست";
+}
+
+.custom-file-input:lang(ar) ~ .custom-file-label::after {
+  content: "...";
+}
+
+.custom-file-input:lang(iw) ~ .custom-file-label::after {
+  content: "...";
 }
 
 .custom-file-label {
@@ -5946,6 +5967,43 @@ button.close {
   }
 }
 
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: .6s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .active.carousel-item-left,
+  .carousel-fade .active.carousel-item-prev {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -7424,6 +7482,10 @@ button.bg-dark:focus {
   width: 100% !important;
 }
 
+.w-auto {
+  width: auto !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -7438,6 +7500,10 @@ button.bg-dark:focus {
 
 .h-100 {
   height: 100% !important;
+}
+
+.h-auto {
+  height: auto !important;
 }
 
 .mw-100 {

@@ -328,4 +328,14 @@ template {
 [hidden] {
   display: none !important;
 }
+
+code,
+samp,
+[type="email"],
+[type="file"],
+[type="tel"],
+[type="url"] {
+  direction: ltr;
+  text-align: left;
+}
 /*# sourceMappingURL=bootstrap-reboot.rtl.css.map */
