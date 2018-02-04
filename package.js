@@ -15,7 +15,7 @@ Package.onUse(function (api) {
   api.use('jquery', 'client');
   api.addFiles([
     'dist/css/bootstrap.css',
-    'dist/css/bootstrap.rtl.css',
+    'dist/css/bootstrap-rtl.css',
     'dist/js/bootstrap.js'
   ], 'client');
 });

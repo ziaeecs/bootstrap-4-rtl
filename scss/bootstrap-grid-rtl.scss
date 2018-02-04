@@ -22,11 +22,11 @@ html {
 }
 
 @import "functions";
-@import "variables.rtl";
+@import "variables-rtl";
 
 @import "mixins/breakpoints";
 @import "mixins/grid-framework";
-@import "mixins/grid.rtl";
+@import "mixins/grid-rtl";
 
 @import "grid";
 @import "utilities/display";

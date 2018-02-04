@@ -1,4 +1,4 @@
-// Build zipped dist package by Windows PowerShell
+// Build zipped distribution package by Windows PowerShell
 
 'use strict'
 

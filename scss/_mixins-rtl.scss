@@ -10,7 +10,7 @@
 @import "mixins/resize";
 @import "mixins/screen-reader";
 @import "mixins/size";
-@import "mixins/reset-text.rtl";
+@import "mixins/reset-text-rtl";
 @import "mixins/text-emphasis";
 @import "mixins/text-hide";
 @import "mixins/text-truncate";
@@ -19,9 +19,9 @@
 // // Components
 @import "mixins/alert";
 @import "mixins/buttons";
-@import "mixins/caret.rtl";
-@import "mixins/pagination.rtl";
-@import "mixins/lists.rtl";
+@import "mixins/caret-rtl";
+@import "mixins/pagination-rtl";
+@import "mixins/lists-rtl";
 @import "mixins/list-group";
 @import "mixins/nav-divider";
 @import "mixins/forms";
@@ -38,5 +38,5 @@
 @import "mixins/clearfix";
 // @import "mixins/navbar-align";
 @import "mixins/grid-framework";
-@import "mixins/grid.rtl";
+@import "mixins/grid-rtl";
 @import "mixins/float";

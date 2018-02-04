@@ -69,19 +69,19 @@
     "watch": "npm-run-all --parallel watch-css watch-js",
     "watch-css": "nodemon --ignore js/ --ignore dist/ -e scss -x \"npm run css\"",
     "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile\"",
-    "css-compile-rtl": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap.rtl.scss dist/css/bootstrap.rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid.rtl.scss dist/css/bootstrap-grid.rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot.rtl.scss dist/css/bootstrap-reboot.rtl.css",
-    "css-minify-rtl": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap.rtl.min.css dist/css/bootstrap.rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-grid.rtl.min.css dist/css/bootstrap-grid.rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot.rtl.min.css dist/css/bootstrap-reboot.rtl.css",
+    "css-compile-rtl": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-rtl.scss dist/css/bootstrap-rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid-rtl.scss dist/css/bootstrap-grid-rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot-rtl.scss dist/css/bootstrap-reboot-rtl.css",
+    "css-minify-rtl": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-rtl.min.css dist/css/bootstrap-rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-grid-rtl.min.css dist/css/bootstrap-grid-rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot-rtl.min.css dist/css/bootstrap-reboot-rtl.css",
     "release-sri-rtl": "node build/generate-sri-rtl.js",
     "release-zip-rtl": "cd dist/ && zip -r9 bootstrap-$npm_package_version-dist-rtl.zip * && shx mv bootstrap-$npm_package_version-dist-rtl.zip ..",
     "release-zip-rtl-win": "node build/release-zip-rtl-win-ps.js"
   },
   "style": [
     "dist/css/bootstrap.css",
-    "dist/css/bootstrap.rtl.css"
+    "dist/css/bootstrap-rtl.css"
   ],
   "sass": [
     "scss/bootstrap.scss",
-    "scss/bootstrap.rtl.scss"
+    "scss/bootstrap-rtl.scss"
   ],
   "main": "dist/js/bootstrap",
   "repository": {
@@ -169,11 +169,11 @@
       "maxSize": "5 kB"
     },
     {
-      "path": "./dist/css/bootstrap-grid.rtl.css",
+      "path": "./dist/css/bootstrap-grid-rtl.css",
       "maxSize": "5 kB"
     },
     {
-      "path": "./dist/css/bootstrap-grid.rtl.min.css",
+      "path": "./dist/css/bootstrap-grid-rtl.min.css",
       "maxSize": "5 kB"
     },
     {
@@ -185,11 +185,11 @@
       "maxSize": "3 kB"
     },
     {
-      "path": "./dist/css/bootstrap-reboot.rtl.css",
+      "path": "./dist/css/bootstrap-reboot-rtl.css",
       "maxSize": "3 kB"
     },
     {
-      "path": "./dist/css/bootstrap-reboot.rtl.min.css",
+      "path": "./dist/css/bootstrap-reboot-rtl.min.css",
       "maxSize": "3 kB"
     },
     {
@@ -201,11 +201,11 @@
       "maxSize": "21 kB"
     },
     {
-      "path": "./dist/css/bootstrap.rtl.css",
+      "path": "./dist/css/bootstrap-rtl.css",
       "maxSize": "25 kB"
     },
     {
-      "path": "./dist/css/bootstrap.rtl.min.css",
+      "path": "./dist/css/bootstrap-rtl.min.css",
       "maxSize": "21 kB"
     },
     {
