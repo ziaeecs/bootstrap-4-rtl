@@ -485,13 +485,12 @@ template {
 //
 // Bypass RTL direction
 // 1. There is no RTL programming/scripting language in public
-// 2. In all cultures this inputs are LTR (based on my experiences)
+// 2. In all cultures this inputs are LTR
 //
 code, // 1
 samp, // 1
 [type="email"], // 2
 [type="file"], // 2
-[type="password"], // 2
 [type="tel"], // 2
 [type="url"] { // 2
   direction: ltr;
