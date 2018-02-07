@@ -4,6 +4,7 @@
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * RTL-ized by Arash Laylazi (https://github.com/PerseusTheGreat)
  */
 :root {
   --blue: #007bff;
@@ -364,6 +365,7 @@ code,
 samp,
 [type="email"],
 [type="file"],
+[type="password"],
 [type="tel"],
 [type="url"] {
   direction: ltr;
@@ -4778,6 +4780,7 @@ tbody.collapse.show {
 }
 
 .page-link:hover {
+  z-index: 2;
   color: #0056b3;
   text-decoration: none;
   background-color: #e9ecef;

@@ -4754,6 +4754,7 @@ tbody.collapse.show {
 }
 
 .page-link:hover {
+  z-index: 2;
   color: #0056b3;
   text-decoration: none;
   background-color: #e9ecef;

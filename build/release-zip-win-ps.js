@@ -9,15 +9,17 @@ const deleteCommand = `PowerShell Remove-Item -Path ${fileName}`
 const buildCommand = `PowerShell Compress-Archive -Path dist/* -CompressionLevel Optimal -DestinationPath ${fileName}`
 
 shell.exec(deleteCommand, (code, stdout, stderr) => {
-  if (code == 0 || code == 1) {
+  code = Number(code)
+  if (code === 0 || code === 1) {
     shell.exec(buildCommand, (code, stdout, stderr) => {
-      if (code == 0) {
+      code = Number(code)
+      if (code === 0) {
         shell.echo('Package build succeeded!')
       } else {
         shell.echo(`Error: ${stderr}`)
         shell.exit(1)
       }
-    })    
+    })
   } else {
     shell.echo(`Error: ${stderr}`)
     shell.exit(1)
