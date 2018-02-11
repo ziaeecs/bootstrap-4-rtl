@@ -2,7 +2,7 @@
   "name": "bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "4.0.0",
-  "rtl-revision": "4",
+  "rtl-revision": "5",
   "keywords": [
     "css",
     "sass",
