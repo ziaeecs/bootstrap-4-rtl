@@ -337,7 +337,7 @@ samp,
 [type="password"],
 [type="tel"],
 [type="url"] {
-  direction: ltr;
   text-align: left;
+  direction: ltr;
 }
 /*# sourceMappingURL=bootstrap-reboot-rtl.css.map */
