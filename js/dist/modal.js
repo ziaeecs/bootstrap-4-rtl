@@ -1,6 +1,4 @@
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
@@ -208,7 +206,7 @@ var Modal = function ($) {
 
 
     _proto._getConfig = function _getConfig(config) {
-      config = _objectSpread({}, Default, config);
+      config = _extends({}, Default, config);
       Util.typeCheckConfig(NAME, config, DefaultType);
       return config;
     };
@@ -495,7 +493,7 @@ var Modal = function ($) {
       return this.each(function () {
         var data = $(this).data(DATA_KEY);
 
-        var _config = _objectSpread({}, Modal.Default, $(this).data(), typeof config === 'object' && config);
+        var _config = _extends({}, Modal.Default, $(this).data(), typeof config === 'object' && config);
 
         if (!data) {
           data = new Modal(this, _config);
@@ -545,7 +543,7 @@ var Modal = function ($) {
       target = $(selector)[0];
     }
 
-    var config = $(target).data(DATA_KEY) ? 'toggle' : _objectSpread({}, $(target).data(), $(this).data());
+    var config = $(target).data(DATA_KEY) ? 'toggle' : _extends({}, $(target).data(), $(this).data());
 
     if (this.tagName === 'A' || this.tagName === 'AREA') {
       event.preventDefault();
