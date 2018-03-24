@@ -28,23 +28,22 @@
     return Constructor;
   }
 
-  function _objectSpread(target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i] != null ? arguments[i] : {};
-      var ownKeys = Object.keys(source);
+  function _extends() {
+    _extends = Object.assign || function (target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
 
-      if (typeof Object.getOwnPropertySymbols === 'function') {
-        ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-          return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-        }));
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
       }
 
-      ownKeys.forEach(function (key) {
-        _defineProperty(target, key, source[key]);
-      });
-    }
+      return target;
+    };
 
-    return target;
+    return _extends.apply(this, arguments);
   }
 
   function _inheritsLoose(subClass, superClass) {
@@ -718,7 +717,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, Default, config);
+        config = _extends({}, Default, config);
         Util.typeCheckConfig(NAME, config, DefaultType);
         return config;
       };
@@ -920,10 +919,10 @@
         return this.each(function () {
           var data = $$$1(this).data(DATA_KEY);
 
-          var _config = _objectSpread({}, Default, $$$1(this).data());
+          var _config = _extends({}, Default, $$$1(this).data());
 
           if (typeof config === 'object') {
-            _config = _objectSpread({}, _config, config);
+            _config = _extends({}, _config, config);
           }
 
           var action = typeof config === 'string' ? config : _config.slide;
@@ -961,7 +960,7 @@
           return;
         }
 
-        var config = _objectSpread({}, $$$1(target).data(), $$$1(this).data());
+        var config = _extends({}, $$$1(target).data(), $$$1(this).data());
 
         var slideIndex = this.getAttribute('data-slide-to');
 
@@ -1254,7 +1253,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, Default, config);
+        config = _extends({}, Default, config);
         config.toggle = Boolean(config.toggle); // Coerce string values
 
         Util.typeCheckConfig(NAME, config, DefaultType);
@@ -1309,7 +1308,7 @@
           var $this = $$$1(this);
           var data = $this.data(DATA_KEY);
 
-          var _config = _objectSpread({}, Default, $this.data(), typeof config === 'object' && config);
+          var _config = _extends({}, Default, $this.data(), typeof config === 'object' && config);
 
           if (!data && _config.toggle && /show|hide/.test(config)) {
             _config.toggle = false;
@@ -1598,7 +1597,7 @@
       };
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, this.constructor.Default, $$$1(this._element).data(), config);
+        config = _extends({}, this.constructor.Default, $$$1(this._element).data(), config);
         Util.typeCheckConfig(NAME, config, this.constructor.DefaultType);
         return config;
       };
@@ -1645,7 +1644,7 @@
 
         if (typeof this._config.offset === 'function') {
           offsetConf.fn = function (data) {
-            data.offsets = _objectSpread({}, data.offsets, _this2._config.offset(data.offsets) || {});
+            data.offsets = _extends({}, data.offsets, _this2._config.offset(data.offsets) || {});
             return data;
           };
         } else {
@@ -2069,7 +2068,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, Default, config);
+        config = _extends({}, Default, config);
         Util.typeCheckConfig(NAME, config, DefaultType);
         return config;
       };
@@ -2356,7 +2355,7 @@
         return this.each(function () {
           var data = $$$1(this).data(DATA_KEY);
 
-          var _config = _objectSpread({}, Modal.Default, $$$1(this).data(), typeof config === 'object' && config);
+          var _config = _extends({}, Modal.Default, $$$1(this).data(), typeof config === 'object' && config);
 
           if (!data) {
             data = new Modal(this, _config);
@@ -2406,7 +2405,7 @@
         target = $$$1(selector)[0];
       }
 
-      var config = $$$1(target).data(DATA_KEY) ? 'toggle' : _objectSpread({}, $$$1(target).data(), $$$1(this).data());
+      var config = $$$1(target).data(DATA_KEY) ? 'toggle' : _extends({}, $$$1(target).data(), $$$1(this).data());
 
       if (this.tagName === 'A' || this.tagName === 'AREA') {
         event.preventDefault();
@@ -2869,7 +2868,7 @@
         });
 
         if (this.config.selector) {
-          this.config = _objectSpread({}, this.config, {
+          this.config = _extends({}, this.config, {
             trigger: 'manual',
             selector: ''
           });
@@ -2963,7 +2962,7 @@
       };
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, this.constructor.Default, $$$1(this.element).data(), config);
+        config = _extends({}, this.constructor.Default, $$$1(this.element).data(), config);
 
         if (typeof config.delay === 'number') {
           config.delay = {
@@ -3132,14 +3131,14 @@
     var CLASS_PREFIX = 'bs-popover';
     var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
 
-    var Default = _objectSpread({}, Tooltip.Default, {
+    var Default = _extends({}, Tooltip.Default, {
       placement: 'right',
       trigger: 'click',
       content: '',
       template: '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>'
     });
 
-    var DefaultType = _objectSpread({}, Tooltip.DefaultType, {
+    var DefaultType = _extends({}, Tooltip.DefaultType, {
       content: '(string|element|function)'
     });
 
@@ -3449,7 +3448,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, Default, config);
+        config = _extends({}, Default, config);
 
         if (typeof config.target !== 'string') {
           var id = $$$1(config.target).attr('id');
