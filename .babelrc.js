@@ -11,8 +11,7 @@ module.exports = {
   ],
   plugins: [
     process.env.PLUGINS && 'transform-es2015-modules-strip',
-    /*'@babel/proposal-object-rest-spread'*/
-    ['@babel/proposal-object-rest-spread', {loose: true}]
+    '@babel/proposal-object-rest-spread'
   ].filter(Boolean),
   env: {
     test: {
