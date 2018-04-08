@@ -80,7 +80,7 @@ Here are the big ticket items you'll want to be aware of when moving from v3 to 
 ### Global changes
 
 - **Flexbox is enabled by default.** In general this means a move away from floats and more across our components.
-- Switched from [Less](http://lesscss.org/) to [Sass](http://sass-lang.com/) for our source CSS files.
+- Switched from [Less](http://lesscss.org/) to [Sass](https://sass-lang.com/) for our source CSS files.
 - Switched from `px` to `rem` as our primary CSS unit, though pixels are still used for media queries and grid behavior as device viewports are not affected by type size.
 - Global font-size increased from `14px` to `16px`.
 - Revamped grid tiers to add a fifth option (addressing smaller devices at `576px` and below) and removed the `-xs` infix from those classes. Example: `.col-6.col-sm-4.col-md-3`.
@@ -130,7 +130,7 @@ New to Bootstrap 4 is the [Reboot]({{ site.baseurl }}/docs/{{ site.docs_version 
 ### Typography
 
 - Moved all `.text-` utilities to the `_utilities.scss` file.
-- Dropped `.page-header` as, aside from the border, all its styles can be applied via utilities.
+- Dropped `.page-header` as its styles can be applied via utilities.
 - `.dl-horizontal` has been dropped. Instead, use `.row` on `<dl>` and use grid column classes (or mixins) on its `<dt>` and `<dd>` children.
 - Redesigned blockquotes, moving their styles from the `<blockquote>` element to a single class, `.blockquote`. Dropped the `.blockquote-reverse` modifier for text utilities.
 - `.list-inline` now requires that its children list items have the new `.list-inline-item` class applied to them.
