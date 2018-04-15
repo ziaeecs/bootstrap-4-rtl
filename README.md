@@ -1,3 +1,11 @@
+# Bootstrap 4 RTL
+- Latest Dist.: [Version 4.1.0 (Official, Weekly build) + RTL 4.1.0 rev.2 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-samples/archive/bootstrap-4.1.0-plus-rtl-rev.2-dist.zip)
+- Visit [sample pages](https://perseusthegreat.github.io/bs4rtl-samples/) in RTL direction.
+- RTL Hints
+  - Always follow XHTML rules.
+  - Use `<html ... dir="rtl" ...>` in IE.
+---
+## Table of contents
 <p align="center">
   <a href="https://getbootstrap.com/">
     <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width=72 height=72>
@@ -105,7 +113,7 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
 
-Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in the `_scripts.html` include.
+Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `assets/js/application.js` file.
 
 ### Running documentation locally
 
