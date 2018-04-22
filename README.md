@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.1.0 (Official, Weekly build) + RTL 4.1.0 rev.2 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.1.0-plus-rtl-rev.2-dist.zip)
+- Latest dist.: [Version 4.1.0 (Official, Weekly build) + RTL 4.1.0 rev.3 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.1.0-plus-rtl-rev.3-dist.zip)
 - Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
