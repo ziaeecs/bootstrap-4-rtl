@@ -3,7 +3,7 @@
 - Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
-  - Use `<html ... dir="rtl" ...>` in IE.
+  - Use `<html ... dir="rtl" ...>` because of MSIE cripple layout engine.😜😉
 ---
 ## Table of contents
 <p align="center">
