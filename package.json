@@ -2,7 +2,7 @@
   "name": "bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "4.1.1",
-  "rtl-revision": "4",
+  "rtl-revision": "5",
   "keywords": [
     "css",
     "sass",
@@ -104,7 +104,7 @@
     "@babel/cli": "7.0.0-beta.49",
     "@babel/core": "7.0.0-beta.49",
     "@babel/preset-env": "7.0.0-beta.49",
-    "autoprefixer": "^8.5.1",
+    "autoprefixer": "^8.6.0",
     "babel-eslint": "^8.2.3",
     "babel-plugin-istanbul": "^4.1.6",
     "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
@@ -130,7 +130,7 @@
     "popper.js": "^1.14.3",
     "postcss-cli": "^5.0.0",
     "qunit": "^2.6.1",
-    "rollup": "^0.59.3",
+    "rollup": "^0.59.4",
     "rollup-plugin-babel": "^4.0.0-beta.4",
     "rollup-plugin-node-resolve": "^3.3.0",
     "shelljs": "^0.8.2",
@@ -142,7 +142,7 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1",
     "stylelint-scss": "^3.1.0",
-    "uglify-js": "^3.3.27",
+    "uglify-js": "^3.4.0",
     "vnu-jar": "^18.5.5",
     "workbox-build": "^3.2.0"
   },
@@ -225,7 +225,7 @@
     },
     {
       "path": "./dist/js/bootstrap.js",
-      "maxSize": "20 kB"
+      "maxSize": "21 kB"
     },
     {
       "path": "./dist/js/bootstrap.min.js",
