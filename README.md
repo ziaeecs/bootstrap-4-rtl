@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.1.1 (Official, Weekly build) + RTL 4.1.1 rev.6 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.1.1-plus-rtl-rev.6-dist.zip)
+- Latest dist.: [Version 4.1.1 (Official, Weekly build) + RTL 4.1.1 rev.7 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.1.1-plus-rtl-rev.7-dist.zip)
 - Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
@@ -81,24 +81,29 @@ Within the download you'll find the following directories and files, logically g
 
 ```
 bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap-grid.css
-│   ├── bootstrap-grid.css.map
-│   ├── bootstrap-grid.min.css
-│   ├── bootstrap-grid.min.css.map
-│   ├── bootstrap-reboot.css
-│   ├── bootstrap-reboot.css.map
-│   ├── bootstrap-reboot.min.css
-│   └── bootstrap-reboot.min.css.map
-└── js/
-    ├── bootstrap.bundle.js
-    ├── bootstrap.bundle.min.js
-    ├── bootstrap.js
-    └── bootstrap.min.js
+└── dist/
+    ├── css/
+    │   ├── bootstrap-grid.css
+    │   ├── bootstrap-grid.css.map
+    │   ├── bootstrap-grid.min.css
+    │   ├── bootstrap-grid.min.css.map
+    │   ├── bootstrap-reboot.css
+    │   ├── bootstrap-reboot.css.map
+    │   ├── bootstrap-reboot.min.css
+    │   ├── bootstrap-reboot.min.css.map
+    │   ├── bootstrap.css
+    │   ├── bootstrap.css.map
+    │   ├── bootstrap.min.css
+    │   └── bootstrap.min.css.map
+    └── js/
+        ├── bootstrap.bundle.js
+        ├── bootstrap.bundle.js.map
+        ├── bootstrap.bundle.min.js
+        ├── bootstrap.bundle.min.js.map
+        ├── bootstrap.js
+        ├── bootstrap.js.map
+        ├── bootstrap.min.js
+        └── bootstrap.min.js.map
 ```
 
 We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
