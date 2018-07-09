@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.1.1 (Official, Weekly build) + RTL 4.1.1 rev.8 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.1.1-plus-rtl-rev.8-dist.zip)
+- Latest dist.: [Version 4.1.1 (Official, Weekly build) + RTL 4.1.1 rev.9 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.1.1-plus-rtl-rev.9-dist.zip)
 - Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
@@ -7,7 +7,7 @@
 ---
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width=72 height=72>
+    <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Logo" width=72 height=72>
   </a>
 
   <h3 align="center">Bootstrap</h3>
