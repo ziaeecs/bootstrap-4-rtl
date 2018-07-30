@@ -56,9 +56,9 @@
       border-color: $color;
 
       @if $enable-validation-icons {
-        padding-right: $input-height-inner;
+        padding-left: $input-height-inner;//rtl
         background-repeat: no-repeat;
-        background-position: center right calc(#{$input-height-inner} / 4);
+        background-position: center left calc(#{$input-height-inner} / 4);//rtl
         background-size: calc(#{$input-height-inner} / 2) calc(#{$input-height-inner} / 2);
 
         @if $state == "valid" {
@@ -85,8 +85,8 @@
     .was-validated &:#{$state},
     &.is-#{$state} {
       @if $enable-validation-icons {
-        padding-right: $input-height-inner;
-        background-position: top calc(#{$input-height-inner} / 4) right calc(#{$input-height-inner} / 4);
+        padding-left: $input-height-inner;//rtl
+        background-position: top calc(#{$input-height-inner} / 4) left calc(#{$input-height-inner} / 4);//rtl
       }
     }
   }
@@ -98,12 +98,12 @@
       border-color: $color;
 
       @if $enable-validation-icons {
-        padding-right: $input-height-inner;
+        padding-left: $input-height-inner;//rtl
 
         @if $state == "valid" {
-          background: $custom-select-background, $form-feedback-icon-valid no-repeat center right ($input-height-inner * .9) / calc(#{$input-height-inner} / 2) calc(#{$input-height-inner} / 2);
+          background: $custom-select-background, $form-feedback-icon-valid no-repeat center left ($input-height-inner * .9) / calc(#{$input-height-inner} / 2) calc(#{$input-height-inner} / 2);//rtl
         } @else {
-          background: $custom-select-background, $form-feedback-icon-invalid no-repeat center right ($input-height-inner * .9) / calc(#{$input-height-inner} / 2) calc(#{$input-height-inner} / 2);
+          background: $custom-select-background, $form-feedback-icon-invalid no-repeat center left ($input-height-inner * .9) / calc(#{$input-height-inner} / 2) calc(#{$input-height-inner} / 2);//rtl
         }
       }
 

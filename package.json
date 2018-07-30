@@ -2,7 +2,7 @@
   "name": "bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "4.1.3",
-  "rtl-revision": "1",
+  "rtl-revision": "2",
   "keywords": [
     "css",
     "sass",
@@ -81,7 +81,6 @@
     "watch-css-docs": "nodemon --watch site/docs/4.1/assets/scss/ --ext scss --exec \"npm run css-docs\"",
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm run js-compile\"",
     "watch-js-docs": "nodemon --watch site/docs/4.1/assets/js/src/ --ext js --exec \"npm run js-docs\"",
-
     "css-compile-rtl": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-rtl.scss dist/css/bootstrap-rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid-rtl.scss dist/css/bootstrap-grid-rtl.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot-rtl.scss dist/css/bootstrap-reboot-rtl.css",
     "css-minify-rtl": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-rtl.min.css dist/css/bootstrap-rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-grid-rtl.min.css dist/css/bootstrap-grid-rtl.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot-rtl.min.css dist/css/bootstrap-reboot-rtl.css",
     "css-main-rtl": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify* css-copy",
@@ -114,9 +113,9 @@
     "popper.js": "^1.14.3"
   },
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.54",
-    "@babel/core": "7.0.0-beta.54",
-    "@babel/preset-env": "7.0.0-beta.54",
+    "@babel/cli": "7.0.0-beta.55",
+    "@babel/core": "7.0.0-beta.55",
+    "@babel/preset-env": "7.0.0-beta.55",
     "autoprefixer": "^9.0.1",
     "babel-eslint": "^8.2.6",
     "babel-plugin-istanbul": "^4.1.6",
@@ -132,7 +131,7 @@
     "htmllint-cli": "0.0.7",
     "http-server": "^0.11.1",
     "jsunitsaucelabs": "^1.3.2",
-    "karma": "^2.0.4",
+    "karma": "^2.0.5",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage-istanbul-reporter": "^2.0.1",
     "karma-detect-browsers": "^2.3.2",
@@ -152,12 +151,12 @@
     "shx": "^0.3.2",
     "sinon": "^6.1.4",
     "sri-toolbox": "^0.2.0",
-    "stylelint": "^9.3.0",
+    "stylelint": "^9.4.0",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1",
     "stylelint-scss": "^3.2.0",
-    "uglify-js": "^3.4.5",
+    "uglify-js": "^3.4.6",
     "vnu-jar": "^18.7.23",
     "workbox-build": "^3.4.1"
   },
@@ -172,19 +171,19 @@
   "bundlesize": [
     {
       "path": "./dist/css/bootstrap-grid.css",
-      "maxSize": "5 kB"
+      "maxSize": "6 kB"
     },
     {
       "path": "./dist/css/bootstrap-grid.min.css",
-      "maxSize": "5 kB"
+      "maxSize": "6 kB"
     },
     {
       "path": "./dist/css/bootstrap-grid-rtl.css",
-      "maxSize": "5 kB"
+      "maxSize": "6 kB"
     },
     {
       "path": "./dist/css/bootstrap-grid-rtl.min.css",
-      "maxSize": "5 kB"
+      "maxSize": "6 kB"
     },
     {
       "path": "./dist/css/bootstrap-reboot.css",
@@ -216,7 +215,7 @@
     },
     {
       "path": "./dist/css/bootstrap-rtl.min.css",
-      "maxSize": "21 kB"
+      "maxSize": "22 kB"
     },
     {
       "path": "./dist/js/bootstrap.bundle.js",
