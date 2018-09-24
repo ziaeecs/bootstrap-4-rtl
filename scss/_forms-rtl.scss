@@ -207,13 +207,13 @@ textarea.form-control {
 .form-check {
   position: relative;
   display: block;
-  padding-left: $form-check-input-gutter;
+  padding-right: $form-check-input-gutter; //rtl
 }
 
 .form-check-input {
   position: absolute;
   margin-top: $form-check-input-margin-y;
-  margin-left: -$form-check-input-gutter;
+  margin-right: -$form-check-input-gutter; //rtl
 
   &:disabled ~ .form-check-label {
     color: $text-muted;
@@ -227,15 +227,15 @@ textarea.form-control {
 .form-check-inline {
   display: inline-flex;
   align-items: center;
-  padding-left: 0; // Override base .form-check
-  margin-right: $form-check-inline-margin-x;
+  padding-right: 0; // Override base .form-check //rtl
+  margin-left: $form-check-inline-margin-x; //rtl
 
   // Undo .form-check-input defaults and add some `margin-right`.
   .form-check-input {
     position: static;
     margin-top: 0;
-    margin-right: $form-check-inline-input-margin-x;
-    margin-left: 0;
+    margin-right: 0; //rtl
+    margin-left: $form-check-inline-input-margin-x; //rtl
   }
 }
 
@@ -313,13 +313,13 @@ textarea.form-control {
       align-items: center;
       justify-content: center;
       width: auto;
-      padding-left: 0;
+      padding-right: 0; //rtl
     }
     .form-check-input {
       position: relative;
       margin-top: 0;
-      margin-right: $form-check-input-margin-x;
-      margin-left: 0;
+      margin-right: 0; //rtl
+      margin-left: $form-check-input-margin-x; //rtl
     }
 
     .custom-control {
