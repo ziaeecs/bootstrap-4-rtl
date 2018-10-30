@@ -158,7 +158,7 @@
 
       var activeElements;
 
-      if (container.nodeName === 'UL') {
+      if (container && container.nodeName === 'UL') {
         activeElements = $(container).find(Selector.ACTIVE_UL);
       } else {
         activeElements = $(container).children(Selector.ACTIVE);
