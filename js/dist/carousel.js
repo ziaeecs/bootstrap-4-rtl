@@ -326,14 +326,12 @@
         if (_this3._pointerEvent && (event.originalEvent.pointerType === PointerType.TOUCH || event.originalEvent.pointerType === PointerType.PEN)) {
           _this3.touchStartX = event.originalEvent.clientX;
         } else if (!_this3._pointerEvent) {
-          event.preventDefault();
           _this3.touchStartX = event.originalEvent.touches[0].clientX;
         }
       };
 
       var move = function move(event) {
-        event.preventDefault(); // ensure swiping with one touch and not pinching
-
+        // ensure swiping with one touch and not pinching
         if (event.originalEvent.touches && event.originalEvent.touches.length > 1) {
           _this3.touchDeltaX = 0;
         } else {
