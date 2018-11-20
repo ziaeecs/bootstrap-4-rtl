@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * RTL-ized by Arash Laylazi (https://github.com/PerseusTheGreat)
- * RTL rev. 17 (https://github.com/PerseusTheGreat/bootstrap-rtl)
+ * RTL rev. 18 (https://github.com/PerseusTheGreat/bootstrap-rtl)
  */
 
 @import "functions";
@@ -27,7 +27,7 @@
 @import "nav-rtl";
 @import "navbar-rtl";
 @import "card-rtl";
-@import "breadcrumb";
+@import "breadcrumb-rtl";
 @import "pagination-rtl";
 @import "badge";
 @import "jumbotron";
@@ -41,6 +41,6 @@
 @import "tooltip";
 @import "popover-rtl";
 @import "carousel-rtl";
-@import "spinners";
+@import "spinners-rtl";
 @import "utilities";
 @import "print";
