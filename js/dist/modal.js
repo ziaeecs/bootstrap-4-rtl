@@ -173,8 +173,6 @@
 
       this._adjustDialog();
 
-      $(document.body).addClass(ClassName.OPEN);
-
       this._setEscapeEvent();
 
       this._setResizeEvent();
@@ -509,6 +507,8 @@
         var calculatedPadding = $(document.body).css('padding-right');
         $(document.body).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + this._scrollbarWidth + "px");
       }
+
+      $(document.body).addClass(ClassName.OPEN);
     };
 
     _proto._resetScrollbar = function _resetScrollbar() {
