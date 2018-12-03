@@ -1,5 +1,7 @@
 // Build zipped distribution package by Windows PowerShell
 
+'use strict'
+
 const shell = require('shelljs')
 const packageJson = require('../package.json')
 const fileName = `bootstrap-${packageJson.version}-plus-rtl-rev.${packageJson['rtl-revision']}-dist.zip`
