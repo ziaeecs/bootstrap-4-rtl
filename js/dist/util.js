@@ -6,8 +6,8 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery')) :
   typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-  (global.Util = factory(global.jQuery));
-}(this, (function ($) { 'use strict';
+  global.Util = factory(global.jQuery);
+}(typeof self !== 'undefined' ? self : this, function ($) { 'use strict';
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
 
@@ -164,5 +164,5 @@
 
   return Util;
 
-})));
+}));
 //# sourceMappingURL=util.js.map

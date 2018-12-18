@@ -163,7 +163,7 @@
 
 .input-group-lg > .custom-select,
 .input-group-sm > .custom-select {
-  padding-left: ($custom-select-padding-x + $custom-select-indicator-padding);//rtl
+  padding-left: $custom-select-padding-x + $custom-select-indicator-padding;//rtl
 }
 
 
