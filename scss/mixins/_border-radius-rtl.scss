@@ -38,14 +38,14 @@
   }
 }
 
-@mixin border-top-right-radius($radius) {
+@mixin border-top-left-radius($radius) {//rtl
   @if $enable-rounded {
-    border-top-right-radius: $radius;
+    border-top-left-radius: $radius;//rtl
   }
 }
 
-@mixin border-bottom-left-radius($radius) {
+@mixin border-bottom-right-radius($radius) {//rtl
   @if $enable-rounded {
-    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;//rtl
   }
 }

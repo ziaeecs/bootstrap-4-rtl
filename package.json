@@ -204,19 +204,19 @@
     },
     {
       "path": "./dist/css/bootstrap.css",
-      "maxSize": "25 kB"
+      "maxSize": "26 kB"
     },
     {
       "path": "./dist/css/bootstrap.min.css",
-      "maxSize": "23 kB"
+      "maxSize": "24 kB"
     },
     {
       "path": "./dist/css/bootstrap-rtl.css",
-      "maxSize": "25 kB"
+      "maxSize": "26 kB"
     },
     {
       "path": "./dist/css/bootstrap-rtl.min.css",
-      "maxSize": "23 kB"
+      "maxSize": "24 kB"
     },
     {
       "path": "./dist/js/bootstrap.bundle.js",
