@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.2.1 (Official, Weekly build) + RTL 4.2.1 rev. 3 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.2.1-plus-rtl-rev.3-dist.zip)
+- Latest dist.: [Version 4.2.1 (Official, Weekly build) + RTL 4.2.1 rev. 4 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.2.1-plus-rtl-rev.4-dist.zip)
 - Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
@@ -218,4 +218,4 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
+Code and documentation copyright 2011-2019 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
