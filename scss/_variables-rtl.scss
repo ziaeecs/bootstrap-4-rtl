@@ -117,6 +117,7 @@ $enable-grid-classes:                         true !default;
 $enable-pointer-cursor-for-buttons:           true !default;
 $enable-print-styles:                         true !default;
 $enable-validation-icons:                     true !default;
+$enable-deprecation-messages:                 true !default;
 
 
 // Spacing
@@ -632,7 +633,7 @@ $custom-file-box-shadow:            $input-box-shadow !default;
 $custom-file-button-color:          $custom-file-color !default;
 $custom-file-button-bg:             $input-group-addon-bg !default;
 $custom-file-text: (
-  en: "Browse", fa: "از فهرست", /*rtl: Persian*/ ar: "...", /*rtl: Arabic (should be provided)*/ iw: "...", //rtl: Hebrew (should be provided)
+  en: "Browse", fa: "از فهرست", /*rtl: Persian*/ ar: "تصفح", /*rtl: Arabic*/ iw: "דפדוף", //rtl: Hebrew
 ) !default;
 
 

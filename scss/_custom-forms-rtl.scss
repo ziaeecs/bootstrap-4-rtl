@@ -213,7 +213,7 @@
   display: inline-block;
   width: 100%;
   height: $custom-select-height;
-  padding: $custom-select-padding-y $custom-select-padding-x $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding); //rtl
+  padding: $custom-select-padding-y $custom-select-padding-x $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding);//rtl
   font-size: $custom-select-font-size;
   font-weight: $custom-select-font-weight;
   line-height: $custom-select-line-height;
@@ -260,7 +260,7 @@
 
   // Hides the default caret in IE11
   &::-ms-expand {
-    opacity: 0;
+    display: none;
   }
 }
 
