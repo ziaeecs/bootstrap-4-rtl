@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.2.1 (Official, Weekly build) + RTL 4.2.1 rev. 6 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.2.1-plus-rtl-rev.6-dist.zip)
+- Latest dist.: [Version 4.2.1 (Official, Weekly build) + RTL 4.2.1 rev. 7 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.2.1-plus-rtl-rev.7-dist.zip)
 - Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
@@ -187,7 +187,7 @@ See [the Releases section of our GitHub project](https://github.com/twbs/bootstr
 ## Thanks
 
 <a href="https://www.browserstack.com/">
-  <img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo" width="490" height="106">
+  <img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo" width="192" height="42">
 </a>
 
 Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
