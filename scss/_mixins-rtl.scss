@@ -2,6 +2,9 @@
 //
 // Used in conjunction with global variables to enable certain theme features.
 
+// Vendor
+@import "vendor/rfs";
+
 // Deprecate
 @import "mixins/deprecate";
 
@@ -32,7 +35,7 @@
 
 // // Skins
 @import "mixins/background-variant";
-@import "mixins/border-radius-rtl";
+@import "mixins/border-radius";
 @import "mixins/box-shadow";
 @import "mixins/gradients";
 @import "mixins/transition";
