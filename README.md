@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.3.0 (Official, Weekly build) + RTL 4.3.0 rev. 1 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.3.0-plus-rtl-rev.1-dist.zip)
+- Latest dist.: [Version 4.3.1 (Official, Weekly build) + RTL 4.3.1 rev. 1 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.3.1-plus-rtl-rev.1-dist.zip)
 - Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
@@ -49,11 +49,11 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.3.0.zip)
+- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.3.1.zip)
 - Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
 - Install with [npm](https://www.npmjs.com/): `npm install bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.3.0`
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.3.0`
+- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.3.1`
+- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.3.1`
 - Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
 
 Read the [Getting started page](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
@@ -74,8 +74,8 @@ Read the [Getting started page](https://getbootstrap.com/docs/4.3/getting-starte
 [![CSS gzip size](https://img.badgesize.io/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/css/bootstrap.min.css)
 [![JS gzip size](https://img.badgesize.io/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/js/bootstrap.min.js)
 [![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)](https://www.browserstack.com/automate/public-build/SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)
-[![Backers on Open Collective](https://opencollective.com/bootstrap/backers/badge.svg)](#backers)
-[![Sponsors on Open Collective](https://opencollective.com/bootstrap/sponsors/badge.svg)](#sponsors)
+[![Backers on Open Collective](https://img.shields.io/opencollective/backers/bootstrap.svg?style=flat)](#backers)
+[![Sponsors on Open Collective](https://img.shields.io/opencollective/sponsors/bootstrap.svg?style=flat)](#sponsors)
 
 
 ## What's included
@@ -134,12 +134,7 @@ Learn more about using Jekyll by reading its [documentation](https://jekyllrb.co
 
 ### Documentation for previous releases
 
-- For v2.3.2: <https://getbootstrap.com/2.3.2/>
-- For v3.3.x: <https://getbootstrap.com/docs/3.3/>
-- For v3.4.0: <https://getbootstrap.com/docs/3.4/>
-- For v4.0.x: <https://getbootstrap.com/docs/4.0/>
-- For v4.1.x: <https://getbootstrap.com/docs/4.1/>
-- For v4.2.x: <https://getbootstrap.com/docs/4.2/>
+You can find all our previous releases docs on <https://getbootstrap.com/docs/versions/>.
 
 [Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
 
