@@ -1,6 +1,6 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~) + RTL 4.3.1 rev. 7 (Unofficial)](https://perseusthegreat.github.io/bs4rtl-examples/archive/bootstrap-4.3.1-plus-rtl-rev.7-dist.zip)
-- Visit [example pages](https://perseusthegreat.github.io/bs4rtl-examples/) in RTL direction.
+- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~) + RTL 4.3.1 rev. 8 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.8-dist.zip)
+- Visit [example pages](http://example.bootstrapper.ir/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
   - Use UTF-8 encoding.
