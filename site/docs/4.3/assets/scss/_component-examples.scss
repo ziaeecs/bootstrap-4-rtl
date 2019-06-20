@@ -91,7 +91,7 @@
 }
 
 .bd-example-container-sidebar {
-  float: right;
+  float: left; //rtl
   width: 4rem;
   height: 8rem;
   background-color: lighten($blue, 25%);
@@ -100,7 +100,7 @@
 
 .bd-example-container-body {
   height: 8rem;
-  margin-right: 4.5rem;
+  margin-left: 4.5rem; //rtl
   background-color: lighten($bd-purple, 25%);
   @include border-radius;
 }
@@ -211,7 +211,7 @@
 .bd-example {
   > svg + svg,
   > img + img {
-    margin-left: .5rem;
+    margin-right: .5rem; //rtl
   }
 }
 
@@ -304,7 +304,7 @@
   }
 
   .modal-dialog {
-    left: auto;
+    right: auto; //rtl
     margin-right: auto;
     margin-left: auto;
   }
@@ -323,7 +323,7 @@
   .popover {
     position: relative;
     display: block;
-    float: left;
+    float: right; //rtl
     width: 260px;
     margin: 1.25rem;
   }

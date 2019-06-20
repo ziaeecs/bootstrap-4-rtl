@@ -505,3 +505,11 @@ var, // 2
   text-align: left;
   direction: ltr;
 }
+
+//
+// KBD tag that wraps combination of two or more keyborad's key, will breaks the layout.
+// So it is better to be act as block that contains inline contents.
+//
+kbd {
+  display: inline-block;
+}

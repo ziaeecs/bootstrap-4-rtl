@@ -17,10 +17,10 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  right: 0; //rtl
+  left: 0; //rtl: because of popper.js nature, it should have its ltr value
   z-index: $zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
-  float: right; //rtl
+  float: left; //rtl: because of popper.js nature, it should have its ltr value
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
@@ -107,8 +107,8 @@
   &[x-placement^="right"],
   &[x-placement^="bottom"],
   &[x-placement^="left"] {
+    right: auto; //rtl: because of popper.js nature, it should have its ltr value
     bottom: auto;
-    left: auto;//rtl
   }
 }
 

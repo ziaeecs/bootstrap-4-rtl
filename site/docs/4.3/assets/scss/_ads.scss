@@ -8,12 +8,12 @@
   position: static;
   display: block;
   max-width: 400px;
-  padding: 15px 15px 15px 160px;
+  padding: 15px 160px 15px 15px; //rtl
   margin: 2rem 0;
   overflow: hidden;
   @include font-size(.8125rem);
   line-height: 1.4;
-  text-align: left;
+  text-align: right; //rtl
   background-color: rgba(0, 0, 0, .05);
 
   a {
@@ -28,8 +28,8 @@
 }
 
 .carbon-img {
-  float: left;
-  margin-left: -145px;
+  float: right; //rtl
+  margin-right: -145px; //rtl
 }
 
 .carbon-poweredby {

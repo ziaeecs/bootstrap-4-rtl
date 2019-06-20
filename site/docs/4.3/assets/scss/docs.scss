@@ -4,6 +4,8 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  * For details, see https://creativecommons.org/licenses/by/3.0/.
+ * RTL-ized by Arash Laylazi (https://github.com/PerseusTheGreat)
+ * RTL rev. 10 (https://github.com/PerseusTheGreat/bootstrap)
  */
 
 // Dev notes
@@ -50,3 +52,4 @@
 @import "syntax";
 @import "anchor";
 @import "algolia";
+@import "rtl";
