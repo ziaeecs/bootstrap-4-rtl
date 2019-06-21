@@ -427,14 +427,14 @@ Utilize the Bootstrap grid system within a modal by nesting `.container-fluid` w
         <div class="container-fluid bd-example-row">
           <div class="row">
             <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+            <div class="col-md-4 mr-auto">.col-md-4 .ml-auto</div>
           </div>
           <div class="row">
-            <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-            <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+            <div class="col-md-3 mr-auto">.col-md-3 .ml-auto</div>
+            <div class="col-md-2 mr-auto">.col-md-2 .ml-auto</div>
           </div>
           <div class="row">
-            <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+            <div class="col-md-6 mr-auto">.col-md-6 .ml-auto</div>
           </div>
           <div class="row">
             <div class="col-sm-9">
@@ -470,14 +470,14 @@ Utilize the Bootstrap grid system within a modal by nesting `.container-fluid` w
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4">.col-md-4</div>
-      <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+      <div class="col-md-4 mr-auto">.col-md-4 .ml-auto</div>
     </div>
     <div class="row">
-      <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-      <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+      <div class="col-md-3 mr-auto">.col-md-3 .ml-auto</div>
+      <div class="col-md-2 mr-auto">.col-md-2 .ml-auto</div>
     </div>
     <div class="row">
-      <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+      <div class="col-md-6 mr-auto">.col-md-6 .ml-auto</div>
     </div>
     <div class="row">
       <div class="col-sm-9">

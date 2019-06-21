@@ -51,7 +51,14 @@ $(function () {
 ## Example
 
 {% capture example %}
-<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+<button type="button" 
+        class="btn btn-lg btn-danger" 
+        data-toggle="popover" 
+        title="Popover title" 
+        data-content="And here's some amazing content. It's very engaging. Right?"
+        data-placement="left">
+  Click to toggle popover
+</button>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -61,36 +68,75 @@ Four options are available: top, right, bottom, and left aligned.
 
 <div class="bd-example popover-demo">
   <div class="bd-example-popovers">
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-      Popover on top
-    </button>
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    <button type="button" 
+            class="btn btn-secondary" 
+            data-container="body" 
+            data-toggle="popover" 
+            data-placement="right" 
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on right
     </button>
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    <button type="button" 
+            class="btn btn-secondary" 
+            data-container="body" 
+            data-toggle="popover" 
+            data-placement="top" 
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on top
+    </button>
+    <button type="button" 
+            class="btn btn-secondary" 
+            data-container="body" 
+            data-toggle="popover" 
+            data-placement="bottom" 
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on bottom
     </button>
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    <button type="button" 
+            class="btn btn-secondary" 
+            data-container="body" 
+            data-toggle="popover" 
+            data-placement="left" 
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on left
     </button>
   </div>
 </div>
 
 {% highlight html %}
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
-
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+<button type="button" 
+        class="btn btn-secondary" 
+        data-container="body" 
+        data-toggle="popover" 
+        data-placement="right" 
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on right
 </button>
 
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
+
+<button type="button" 
+        class="btn btn-secondary" 
+        data-container="body" 
+        data-toggle="popover" 
+        data-placement="top" 
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
+<button type="button" 
+        class="btn btn-secondary" 
+        data-container="body" 
+        data-toggle="popover" 
+        data-placement="bottom" 
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on bottom
 </button>
 
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+<button type="button" 
+        class="btn btn-secondary" 
+        data-container="body" 
+        data-toggle="popover" 
+        data-placement="left" 
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on left
 </button>
 {% endhighlight %}
@@ -107,7 +153,16 @@ For proper cross-browser and cross-platform behavior, you must use the `<a>` tag
 {% include callout.html content=callout type="danger" %}
 
 {% capture example %}
-<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+<a tabindex="0" 
+   class="btn btn-lg btn-danger" 
+   role="button" 
+   data-toggle="popover" 
+   data-trigger="focus" 
+   title="Dismissible popover" 
+   data-content="And here's some amazing content. It's very engaging. Right?"
+   data-placement="left" >
+  Dismissible popover
+</a>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -124,8 +179,16 @@ Elements with the `disabled` attribute aren't interactive, meaning users cannot 
 For disabled popover triggers, you may also prefer `data-trigger="hover"` so that the popover appears as immediate visual feedback to your users as they may not expect to _click_ on a disabled element.
 
 {% capture example %}
-<span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
-  <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+<span class="d-inline-block" 
+      data-toggle="popover" 
+      data-content="Disabled popover"
+      data-placement="left">
+  <button type="button" 
+          class="btn btn-primary" 
+          style="pointer-events: none;" 
+          disabled>
+    Disabled button
+  </button>
 </span>
 {% endcapture %}
 {% include example.html content=example %}

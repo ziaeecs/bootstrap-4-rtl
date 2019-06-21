@@ -28,10 +28,10 @@ Toasts are as flexible as you need and have very little required markup. At a mi
 {% capture example %}
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-    <strong class="mr-auto">Bootstrap</strong>
+    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+    <strong class="ml-auto">Bootstrap</strong>
     <small>11 mins ago</small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+    <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -49,10 +49,10 @@ Toasts are slightly translucent, too, so they blend over whatever they might app
 {% capture example %}
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-    <strong class="mr-auto">Bootstrap</strong>
+    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+    <strong class="ml-auto">Bootstrap</strong>
     <small class="text-muted">11 mins ago</small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+    <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -70,10 +70,10 @@ When you have multiple toasts, we default to vertically stacking them in a reada
 {% capture example %}
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-    <strong class="mr-auto">Bootstrap</strong>
+    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+    <strong class="ml-auto">Bootstrap</strong>
     <small class="text-muted">just now</small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+    <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -84,10 +84,10 @@ When you have multiple toasts, we default to vertically stacking them in a reada
 
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-    <strong class="mr-auto">Bootstrap</strong>
+    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+    <strong class="ml-auto">Bootstrap</strong>
     <small class="text-muted">2 seconds ago</small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+    <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -104,12 +104,12 @@ Place toasts with custom CSS as you need them. The top right is often used for n
 
 {% capture example %}
 <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
-  <div class="toast" style="position: absolute; top: 0; right: 0;">
+  <div class="toast" style="position: absolute; top: 0; left: 0;">
     <div class="toast-header">
-      {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-      <strong class="mr-auto">Bootstrap</strong>
+      {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+      <strong class="ml-auto">Bootstrap</strong>
       <small>11 mins ago</small>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
@@ -126,15 +126,15 @@ For systems that generate more notifications, consider using a wrapping element 
 {% capture example %}
 <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
   <!-- Position it -->
-  <div style="position: absolute; top: 0; right: 0;">
+  <div style="position: absolute; top: 0; left: 0;">
 
     <!-- Then put toasts within -->
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-        <strong class="mr-auto">Bootstrap</strong>
+        {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+        <strong class="ml-auto">Bootstrap</strong>
         <small class="text-muted">just now</small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -145,10 +145,10 @@ For systems that generate more notifications, consider using a wrapping element 
 
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-        <strong class="mr-auto">Bootstrap</strong>
+        {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+        <strong class="ml-auto">Bootstrap</strong>
         <small class="text-muted">2 seconds ago</small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -170,10 +170,10 @@ You can also get fancy with flexbox utilities to align toasts horizontally and/o
   <!-- Then put toasts within -->
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-      <strong class="mr-auto">Bootstrap</strong>
+      {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+      <strong class="ml-auto">Bootstrap</strong>
       <small>11 mins ago</small>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
@@ -206,10 +206,10 @@ When using `autohide: false`, you must add a close button to allow users to dism
 {% capture example %}
 <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
   <div class="toast-header">
-    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded mr-2" text=" " title=" " %}
-    <strong class="mr-auto">Bootstrap</strong>
+    {% include icons/placeholder.svg width="20" height="20" background="#007aff" class="rounded ml-2" text=" " title=" " %}
+    <strong class="ml-auto">Bootstrap</strong>
     <small>11 mins ago</small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+    <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>

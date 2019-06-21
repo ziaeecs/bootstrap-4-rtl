@@ -278,7 +278,7 @@ Flexbox can do some pretty awesome things when you mix flex alignments with auto
 </div>
 
 <div class="d-flex bd-highlight mb-3">
-  <div class="mr-auto p-2 bd-highlight">Flex item</div>
+  <div class="ml-auto p-2 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Flex item</div>
 </div>
@@ -286,7 +286,7 @@ Flexbox can do some pretty awesome things when you mix flex alignments with auto
 <div class="d-flex bd-highlight mb-3">
   <div class="p-2 bd-highlight">Flex item</div>
   <div class="p-2 bd-highlight">Flex item</div>
-  <div class="ml-auto p-2 bd-highlight">Flex item</div>
+  <div class="mr-auto p-2 bd-highlight">Flex item</div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}

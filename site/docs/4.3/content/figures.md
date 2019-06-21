@@ -22,7 +22,7 @@ Aligning the figure's caption is easy with our [text utilities]({{ site.baseurl 
 {% capture example %}
 <figure class="figure">
   {% include icons/placeholder.svg width="400" height="300" class="figure-img img-fluid rounded" %}
-  <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+  <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
 </figure>
 {% endcapture %}
 {% include example.html content=example %}
