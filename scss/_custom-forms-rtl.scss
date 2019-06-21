@@ -16,7 +16,7 @@
 
 .custom-control-inline {
   display: inline-flex;
-  margin-right: $custom-control-spacer-x;
+  margin-left: $custom-control-spacer-x; //rtl
 }
 
 .custom-control-input {

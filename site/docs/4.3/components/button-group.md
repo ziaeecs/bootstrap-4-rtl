@@ -12,9 +12,9 @@ Wrap a series of buttons with `.btn` in `.btn-group`. Add on optional JavaScript
 
 {% capture example %}
 <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
   <button type="button" class="btn btn-secondary">Right</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Left</button>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
@@ -101,21 +101,21 @@ Instead of applying button sizing classes to every button in a group, just add `
 
 <div class="bd-example">
   <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
     <button type="button" class="btn btn-secondary">Right</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Left</button>
   </div>
   <br>
   <div class="btn-group" role="group" aria-label="Default button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
     <button type="button" class="btn btn-secondary">Right</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Left</button>
   </div>
   <br>
   <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
     <button type="button" class="btn btn-secondary">Right</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Left</button>
   </div>
 </div>
 
