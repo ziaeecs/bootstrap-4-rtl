@@ -27,8 +27,8 @@
 
 // Load Bootstrap variables and mixins
 @import "../../../../../scss/functions";
-@import "../../../../../scss/variables";
-@import "../../../../../scss/mixins";
+@import "../../../../../scss/variables-rtl";
+@import "../../../../../scss/mixins-rtl";
 
 // Load docs components
 @import "variables";

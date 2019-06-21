@@ -5,11 +5,16 @@
   }
 }
 
-code {
+kbd,
+code,
+.toc-entry a {
+  direction: ltr;
+
   &:before,
   &::before {
     content: "\202A"; //&lre;
   }
+
   &:after,
   &::after {
     //content: "\202B"; //&rle;
@@ -19,20 +24,22 @@ code {
 
 // External BUG: Microsift Edge (12-18) does not show sticky element on rtl direction
 // So, in Edge ,I use relative position
-@supports ((position: -webkit-sticky) or (position: sticky)) {
-  @supports (-ms-ime-align: auto) {
-    @media (min-width: 768px) {
-      .bd-navbar {
+@supports (-ms-ime-align: auto) {
+  @supports (position: sticky) {
+    .bd-toc {
+      position: relative;
+      top: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      .bd-navbar,
+      .bd-sidebar {
         position: relative;
       }
 
       .bd-sidebar {
-        position: relative;
+        top: 0;
       }
-    }
-
-    .bd-toc {
-      position: relative;
     }
   }
 }
