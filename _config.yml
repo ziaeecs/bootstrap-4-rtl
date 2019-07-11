@@ -14,8 +14,7 @@ destination:    ./_gh_pages
 host:           "localhost"
 port:           9001
 baseurl:        ""
-#url:            "https://getbootstrap.com" #rtl
-url:            "http://docs.bootstrapper.ir"
+url:            "http://docs.bootstrapper.ir" #"https://getbootstrap.com" #rtl
 encoding:       UTF-8
 exclude:
   - docs/4.3/assets/scss/
@@ -34,13 +33,10 @@ social_image_path:  /docs/4.3/assets/brand/bootstrap-social.png
 social_logo_path:   /docs/4.3/assets/brand/bootstrap-social-logo.png
 
 # Custom variables
-#current_version:      4.3.1 #rtl
-current_version:      "4.3.1.10 RTL"
-#current_ruby_version: 4.3.1 #rtl
-current_ruby_version: "4.3.1.10 RTL"
+current_version:      "4.3.1.11 RTL" #4.3.1 #rtl
+current_ruby_version: "4.3.1.11 RTL" #4.3.1 #rtl
 docs_version:         4.3
-#repo:                 "https://github.com/twbs/bootstrap" #rtl
-repo:                 "https://github.com/PerseusTheGreat/bootstrap-4-rtl"
+repo:                 "https://github.com/PerseusTheGreat/bootstrap-4-rtl" #"https://github.com/twbs/bootstrap" #rtl
 slack:                "https://bootstrap-slack.herokuapp.com"
 opencollective:       "https://opencollective.com/bootstrap"
 blog:                 "https://blog.getbootstrap.com"
@@ -48,10 +44,8 @@ expo:                 "https://expo.getbootstrap.com"
 themes:               "https://themes.getbootstrap.com"
 
 download:
-# source:           "https://github.com/twbs/bootstrap/archive/v4.3.1.zip" #rtl
-  source:           "https://github.com/PerseusTheGreat/bootstrap-4-rtl/"
-# dist:             "https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip" #rtl
-  dist:             "http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.10-dist.zip"
+  source:           "https://github.com/PerseusTheGreat/bootstrap-4-rtl/" #"https://github.com/twbs/bootstrap/archive/v4.3.1.zip" #rtl
+  dist:             "http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.11-dist.zip" #"https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip" #rtl
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes

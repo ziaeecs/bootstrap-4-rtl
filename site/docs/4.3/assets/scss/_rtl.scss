@@ -7,15 +7,14 @@
 
 kbd,
 code,
+.bd-content-title,
 .toc-entry a {
   direction: ltr;
 
-  &:before,
   &::before {
     content: "\202A"; //&lre;
   }
 
-  &:after,
   &::after {
     //content: "\202B"; //&rle;
     content: "\202C"; //&pdf;

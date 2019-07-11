@@ -14,7 +14,12 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
@@ -53,9 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .875rem;
 }
 
-.card-img-right {
+/* .card-img-right */
+.card-img-left { /* rtl */
   height: 100%;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0 0 3px; /* rtl */
 }
 
 .flex-auto {
@@ -63,9 +69,13 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
+.h-250 {
+  height: 250px;
+}
 @media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+  .h-md-250 {
+    height: 250px;
+  }
 }
 
 /*

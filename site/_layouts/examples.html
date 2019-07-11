@@ -1,14 +1,14 @@
-<!doctype html>
-<html lang="en" dir="rtl"{% if page.html_class %} class="{{ page.html_class }}"{% endif %}>
+<!DOCTYPE html>
+<html lang="en" dir="rtl" xmlns="http://www.w3.org/1999/xhtml"{% if page.html_class %} class="{{ page.html_class }}"{% endif %}>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="{{ site.authors }}">
-    <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="{{ site.authors }}"/>
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}"/>
     <title>{{ page.title | smartify }} · {{ site.title | smartify }}</title>
 
-    <link rel="canonical" href="{{ site.url | append: page.url }}">
+    <link rel="canonical" href="{{ site.url | append: page.url }}"/>
 
     {% include stylesheet.html %}
     {% include favicons.html %}
@@ -32,7 +32,7 @@
 
     {%- for css in page.extra_css %}
     <!-- Custom styles for this template -->
-    <link href="{{ css }}" rel="stylesheet">
+    <link href="{{ css }}" rel="stylesheet"/>
     {%- endfor %}
   </head>
   <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>

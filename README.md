@@ -1,20 +1,38 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~) + RTL 4.3.1 rev. 10 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.10-dist.zip)
-- Visit [full documentaions](http://docs.bootstrapper.ir/) in RTL direction. (English docs)
-- Visit [example pages](http://example.bootstrapper.ir/) in RTL direction.
-- RTL Hints
+- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 11 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.11-dist.zip)
+- Visit [full documentaions<sup>2</sup>](http://docs.bootstrapper.ir/) in RTL direction. (English docs)
+- Visit [example pages<sup>3</sup>](http://example.bootstrapper.ir/) in RTL direction.
+
+## RTL Hints:
   - Always follow XHTML rules.
   - Use UTF-8 encoding.
-  - Use `<html ... dir="rtl" ... >` for correct PRINT layout and also, because of MSIE cripple😜 layout engine.
+  - Use `<html ... dir="rtl" ... >` for correct PRINT layout and also, because of MSIE cripple 😜 layout engine.
+  - In case of adapting / converting **Bootstrap 4 templates**:
+    - Replace all official `bootstrap.css` references by `bootstrap-rtl.css` in all HTML files.
+    - Inside every HTML file, find these direction specific CSS class names and change them:
+      - `border-left` to `border-right` and vice versa.
+      - `border-left-0` to `border-right-0` and vice versa.
+      - `rounded-left` to `rounded-right` and vice versa.
+      - `float-left` to `float-right` and vice versa.
+      - `ml-*` to `mr-*` and vice versa.
+      - `pl-*` to `pr-*` and vice versa.
+      - `text-left` to `text-right` and vice versa.
+      - `text-*-left` to `text-*-right` and vice versa.
+      - `dropleft` to `dropright` and vice versa.
+      - `dropdown-menu-left` to `dropdown-menu-right` and vice versa.
+      - `dropdown-menu-*-left` to `dropdown-menu-*-right` and vice versa.
+    - Also, to correct **Popovers** / **Tooltips** direction, change all `data-placement="left"` to `data-placement="right"` and vice versa.
+    - After that, use [RTLCSS<sup>4</sup>](https://rtlcss.com/playground/) to adapt / convert all customized css codes to RTL edition.
 
-- **Important**:
-  - As you know, [TWBS](https://github.com/twbs/bootstrap) had changed their policies about development and maintenance of version 4.x and they will merge shipped changes in official `v4-dev` branch. Because of their unplanned merges, next RTL revisions will not have been provided weekly. 😞
-  - [RTL documentations](http://docs.bootstrapper.ir/) is now online. 😈😎
-    - RTL docs have been tested on IE 11, Edge 18, latest Edge beta, latest Firefox, and latest Chrome.
-    - Edge 18 has some issues about RTL direction and sticky position
-    - New chromium based Edge (beta channel) has some issues about RTL direction and flexbox layouts
-    - Documentation layouts have ~~not~~ been reviewed completely and it is ~~in progress~~ done!
-    - RTL docs and [RTL example pages](https://github.com/PerseusTheGreat/bs4rtl-examples) will be combined ASAP.
+## Important:
+  1.  As you know, [TWBS](https://github.com/twbs/bootstrap) had changed their policies about development and maintenance of version 4.x and they will merge shipped changes in official `v4-dev` branch. Because of their unplanned merges, next RTL revisions will not have been provided weekly. 😞
+  2. [RTL documentations](http://docs.bootstrapper.ir/) is now online. 😈😎
+      - RTL docs have been tested on IE 11, Edge 18, latest Edge insider (Dev & Canary channels), latest Firefox, and latest Chrome.
+      - Edge 12-18 has issues about RTL direction and sticky position
+      - ~~New chromium based Edge (Dev and Canary channels) have an issues about RTL direction and flexbox layouts.~~ [it is resolved now](https://techcommunity.microsoft.com/t5/Discussions/Bug-Edge-Dev-FlexBox-RTL-Direction-Incorrect-Layout/m-p/714493).
+      - Documentation layouts have ~~not~~ been reviewed completely and it is ~~in progress~~ done!
+  3. [RTL docs](http://docs.bootstrapper.ir/) and [RTL example pages](http://example.bootstrapper.ir/) ~~will be~~ are combined ~~ASAP~~ now.
+  4. [RTLCSS](https://github.com/MohammadYounes/rtlcss) is an impressive tool 🤯 created by [Mohammad Younes](https://github.com/MohammadYounes).
 ---
 <p align="center">
   <a href="https://getbootstrap.com/">

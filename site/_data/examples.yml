@@ -53,3 +53,5 @@
       description: "Beautifully simple forms with floating labels over your inputs."
     - name: Offcanvas
       description: "Turn your expandable navbar into a sliding offcanvas menu."
+    - name: Tooltip viewport
+      description: "<del class='text-danger'>There is no explanation! Every things have been deleted!<del>"
