@@ -1,28 +1,34 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 11 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.11-dist.zip)
+- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 12 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.12-dist.zip)
 - Visit [full documentaions<sup>2</sup>](http://docs.bootstrapper.ir/) in RTL direction. (English docs)
 - Visit [example pages<sup>3</sup>](http://example.bootstrapper.ir/) in RTL direction.
 
 ## RTL Hints:
-  - Always follow XHTML rules.
+  - Use this package like official package.
+  - Use `<html ... dir="rtl" ... >` for correct PRINT layout and also, because of MS IE/EDGE layout engine RTL capabilities.
   - Use UTF-8 encoding.
-  - Use `<html ... dir="rtl" ... >` for correct PRINT layout and also, because of MSIE cripple 😜 layout engine.
-  - In case of adapting / converting **Bootstrap 4 templates**:
-    - Replace all official `bootstrap.css` references by `bootstrap-rtl.css` in all HTML files.
-    - Inside every HTML file, find these direction specific CSS class names and change them:
-      - `border-left` to `border-right` and vice versa.
-      - `border-left-0` to `border-right-0` and vice versa.
-      - `rounded-left` to `rounded-right` and vice versa.
-      - `float-left` to `float-right` and vice versa.
-      - `ml-*` to `mr-*` and vice versa.
-      - `pl-*` to `pr-*` and vice versa.
-      - `text-left` to `text-right` and vice versa.
-      - `text-*-left` to `text-*-right` and vice versa.
-      - `dropleft` to `dropright` and vice versa.
-      - `dropdown-menu-left` to `dropdown-menu-right` and vice versa.
-      - `dropdown-menu-*-left` to `dropdown-menu-*-right` and vice versa.
-    - Also, to correct **Popovers** / **Tooltips** direction, change all `data-placement="left"` to `data-placement="right"` and vice versa.
-    - After that, use [RTLCSS<sup>4</sup>](https://rtlcss.com/playground/) to adapt / convert all customized css codes to RTL edition.
+  - Always follow XHTML rules.
+
+## Usage:
+  - Install with [npm](https://www.npmjs.com/): `npm i @laylazi/bootstrap-rtl`
+  - Reference to latest version/revision on UNPKG CDN: [https://unpkg.com/@laylazi/bootstrap-rtl/](https://unpkg.com/@laylazi/bootstrap-rtl/)
+
+## In case of adapting/converting Bootstrap&copy; 4.x templates:  
+  - Replace all official `bootstrap.css` references by `bootstrap-rtl.css` in all HTML files.
+  - Inside every HTML file, find these direction specific CSS class names and change them:
+    - `border-left` to `border-right` and vice versa.
+    - `border-left-0` to `border-right-0` and vice versa.
+    - `rounded-left` to `rounded-right` and vice versa.
+    - `float-left` to `float-right` and vice versa.
+    - `ml-*` to `mr-*` and vice versa.
+    - `pl-*` to `pr-*` and vice versa.
+    - `text-left` to `text-right` and vice versa.
+    - `text-*-left` to `text-*-right` and vice versa.
+    - `dropleft` to `dropright` and vice versa.
+    - `dropdown-menu-left` to `dropdown-menu-right` and vice versa.
+    - `dropdown-menu-*-left` to `dropdown-menu-*-right` and vice versa.
+  - Also, to correct **Popovers** / **Tooltips** direction, change all `data-placement="left"` to `data-placement="right"` and vice versa.
+  - After that, use [RTLCSS<sup>4</sup>](https://rtlcss.com/playground/) to adapt / convert all customized css codes to RTL edition.
 
 ## Important:
   1.  As you know, [TWBS](https://github.com/twbs/bootstrap) had changed their policies about development and maintenance of version 4.x and they will merge shipped changes in official `v4-dev` branch. Because of their unplanned merges, next RTL revisions will not have been provided weekly. 😞
@@ -242,4 +248,4 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2019 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
+Code and documentation copyright 2011-2019 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).

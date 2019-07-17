@@ -21,6 +21,12 @@ code,
   }
 }
 
+.card-link {
+  &::after {
+    content: "\200F"; //&rlm;
+  }
+}
+
 // External BUG: Microsift Edge (12-18) does not show sticky element on rtl direction
 // So, in Edge ,I use relative position
 @supports (-ms-ime-align: auto) {
