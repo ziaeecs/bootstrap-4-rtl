@@ -68,10 +68,10 @@
       border-color: $color;
 
       @if $enable-validation-icons {
-        padding-left: $input-height-inner;//rtl
-        background-image: $icon;
+        padding-left: $input-height-inner; //rtl
+        background-image: escape-svg($icon);
         background-repeat: no-repeat;
-        background-position: left $input-height-inner-quarter center;//rtl
+        background-position: left $input-height-inner-quarter center; //rtl
         background-size: $input-height-inner-half $input-height-inner-half;
       }
 
@@ -91,8 +91,8 @@
   textarea.form-control {
     @include form-validation-state-selector($state) {
       @if $enable-validation-icons {
-        padding-left: $input-height-inner;//rtl
-        background-position: top $input-height-inner-quarter left $input-height-inner-quarter;//rtl
+        padding-left: $input-height-inner; //rtl
+        background-position: top $input-height-inner-quarter left $input-height-inner-quarter; //rtl
       }
     }
   }
@@ -102,8 +102,8 @@
       border-color: $color;
 
       @if $enable-validation-icons {
-        padding-left: $custom-select-feedback-icon-padding-left;//rtl
-        background: $custom-select-background, $icon $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
+        padding-left: $custom-select-feedback-icon-padding-left; //rtl
+        background: $custom-select-background, escape-svg($icon) $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
       }
 
       &:focus {

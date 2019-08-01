@@ -102,8 +102,7 @@
     })
 
     anchors.options = {
-      icon: '#',
-      placement: 'left' //rtl
+      icon: '#'
     }
     anchors.add('.bd-content > h2, .bd-content > h3, .bd-content > h4, .bd-content > h5')
     $('.bd-content').children('h2, h3, h4, h5').wrapInner('<span class="bd-content-title"></span>')

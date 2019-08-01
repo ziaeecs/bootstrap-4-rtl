@@ -29,9 +29,9 @@
 .carousel-item {
   position: relative;
   display: none;
-  float: right;//rtl
+  float: right; //rtl
   width: 100%;
-  margin-left: -100%;//rtl
+  margin-left: -100%; //rtl
   backface-visibility: hidden;
   @include transition($carousel-transition);
 }
@@ -44,12 +44,12 @@
 
 .carousel-item-next:not(.carousel-item-left),
 .active.carousel-item-right {
-  transform: translateX(-100%);//rtl
+  transform: translateX(-100%); //rtl
 }
 
 .carousel-item-prev:not(.carousel-item-right),
 .active.carousel-item-left {
-  transform: translateX(100%);//rtl
+  transform: translateX(100%); //rtl
 }
 
 
@@ -75,7 +75,7 @@
   .active.carousel-item-right {
     z-index: 0;
     opacity: 0;
-    @include transition(0s $carousel-transition-duration opacity);
+    @include transition(opacity 0s $carousel-transition-duration);
   }
 }
 
@@ -101,7 +101,7 @@
   @include transition($carousel-control-transition);
 
   // Hover/focus state
-  @include hover-focus {
+  @include hover-focus() {
     color: $carousel-control-color;
     text-decoration: none;
     outline: 0;
@@ -109,15 +109,15 @@
   }
 }
 .carousel-control-prev {
-  right: 0;//rtl
+  right: 0; //rtl
   @if $enable-gradients {
-    background: linear-gradient(-90deg, rgba($black, .25), rgba($black, .001));//rtl
+    background-image: linear-gradient(-90deg, rgba($black, .25), rgba($black, .001)); //rtl
   }
 }
 .carousel-control-next {
-  left: 0;//rtl
+  left: 0; //rtl
   @if $enable-gradients {
-    background: linear-gradient(-270deg, rgba($black, .25), rgba($black, .001));//rtl
+    background-image: linear-gradient(-270deg, rgba($black, .25), rgba($black, .001)); //rtl
   }
 }
 
@@ -130,10 +130,10 @@
   background: no-repeat 50% / 100% 100%;
 }
 .carousel-control-prev-icon {
-  background-image: $carousel-control-prev-icon-bg;
+  background-image: escape-svg($carousel-control-prev-icon-bg);
 }
 .carousel-control-next-icon {
-  background-image: $carousel-control-next-icon-bg;
+  background-image: escape-svg($carousel-control-next-icon-bg);
 }
 
 

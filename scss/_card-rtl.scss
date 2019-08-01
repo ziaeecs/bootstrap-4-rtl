@@ -56,12 +56,12 @@
 }
 
 .card-link {
-  @include hover {
+  @include hover() {
     text-decoration: none;
   }
 
   + .card-link {
-    margin-right: $card-spacer-x;//rtl
+    margin-right: $card-spacer-x; //rtl
   }
 }
 
@@ -193,39 +193,39 @@
       margin-bottom: 0;
 
       + .card {
-        margin-right: 0;//rtl
-        border-right: 0;//rtl
+        margin-right: 0; //rtl
+        border-right: 0; //rtl
       }
 
       // Handle rounded corners
       @if $enable-rounded {
         &:not(:last-child) {
-          @include border-left-radius(0);//rtl
+          @include border-left-radius(0); //rtl
 
           .card-img-top,
           .card-header {
             // stylelint-disable-next-line property-blacklist
-            border-top-left-radius: 0;//rtl
+            border-top-left-radius: 0; //rtl
           }
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
-            border-bottom-left-radius: 0;//rtl
+            border-bottom-left-radius: 0; //rtl
           }
         }
 
         &:not(:first-child) {
-          @include border-right-radius(0);//rtl
+          @include border-right-radius(0); //rtl
 
           .card-img-top,
           .card-header {
             // stylelint-disable-next-line property-blacklist
-            border-top-right-radius: 0;//rtl
+            border-top-right-radius: 0; //rtl
           }
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
-            border-bottom-right-radius: 0;//rtl
+            border-bottom-right-radius: 0; //rtl
           }
         }
       }
