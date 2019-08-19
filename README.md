@@ -16,17 +16,17 @@
 ## In case of adapting/converting Bootstrap&copy; 4.x templates:  
   - Replace all official `bootstrap.css` references by `bootstrap-rtl.css` in all HTML files.
   - Inside every HTML file, find these direction specific CSS class names and change them:
-    - `border-left` to `border-right` and vice versa.
-    - `border-left-0` to `border-right-0` and vice versa.
-    - `rounded-left` to `rounded-right` and vice versa.
-    - `float-left` to `float-right` and vice versa.
-    - `ml-*` to `mr-*` and vice versa.
-    - `pl-*` to `pr-*` and vice versa.
-    - `text-left` to `text-right` and vice versa.
-    - `text-*-left` to `text-*-right` and vice versa.
-    - `dropleft` to `dropright` and vice versa.
-    - `dropdown-menu-left` to `dropdown-menu-right` and vice versa.
-    - `dropdown-menu-*-left` to `dropdown-menu-*-right` and vice versa.
+    - from `border-left` to `border-right` and vice versa.
+    - from `border-left-0` to `border-right-0` and vice versa.
+    - from `rounded-left` to `rounded-right` and vice versa.
+    - from `float-left` to `float-right` and vice versa.
+    - from `ml-*` to `mr-*` and vice versa.
+    - from `pl-*` to `pr-*` and vice versa.
+    - from `text-left` to `text-right` and vice versa.
+    - from `text-*-left` to `text-*-right` and vice versa.
+    - from `dropleft` to `dropright` and vice versa.
+    - from `dropdown-menu-left` to `dropdown-menu-right` and vice versa.
+    - from `dropdown-menu-*-left` to `dropdown-menu-*-right` and vice versa.
   - Also, to correct **Popovers** / **Tooltips** direction, change all `data-placement="left"` to `data-placement="right"` and vice versa.
   - After that, use [RTLCSS<sup>4</sup>](https://rtlcss.com/playground/) to adapt / convert all customized css codes to RTL edition.
 
