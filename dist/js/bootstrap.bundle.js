@@ -201,6 +201,7 @@
     },
     typeCheckConfig: function typeCheckConfig(componentName, config, configTypes) {
       for (var property in configTypes) {
+        // eslint-disable-line no-unused-vars
         if (Object.prototype.hasOwnProperty.call(configTypes, property)) {
           var expectedTypes = configTypes[property];
           var value = config[property];
@@ -5970,6 +5971,7 @@
 
     _proto._isWithActiveTrigger = function _isWithActiveTrigger() {
       for (var trigger in this._activeTrigger) {
+        // eslint-disable-line no-unused-vars
         if (this._activeTrigger[trigger]) {
           return true;
         }
@@ -6016,6 +6018,7 @@
 
       if (this.config) {
         for (var key in this.config) {
+          // eslint-disable-line no-unused-vars
           if (this.constructor.Default[key] !== this.config[key]) {
             config[key] = this.config[key];
           }
