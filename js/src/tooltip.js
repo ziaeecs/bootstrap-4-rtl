@@ -648,7 +648,7 @@ class Tooltip {
   }
 
   _isWithActiveTrigger() {
-    for (const trigger in this._activeTrigger) {
+    for (const trigger in this._activeTrigger) { // eslint-disable-line no-unused-vars
       if (this._activeTrigger[trigger]) {
         return true
       }
@@ -705,7 +705,7 @@ class Tooltip {
     const config = {}
 
     if (this.config) {
-      for (const key in this.config) {
+      for (const key in this.config) { // eslint-disable-line no-unused-vars
         if (this.constructor.Default[key] !== this.config[key]) {
           config[key] = this.config[key]
         }

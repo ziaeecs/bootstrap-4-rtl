@@ -131,7 +131,7 @@ const Util = {
   },
 
   typeCheckConfig(componentName, config, configTypes) {
-    for (const property in configTypes) {
+    for (const property in configTypes) { // eslint-disable-line no-unused-vars
       if (Object.prototype.hasOwnProperty.call(configTypes, property)) {
         const expectedTypes = configTypes[property]
         const value         = config[property]

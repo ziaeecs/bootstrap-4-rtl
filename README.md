@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 13 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.13-dist.zip)
+- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 14 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.14-dist.zip)
 - Visit [full documentaions<sup>2</sup>](http://docs.bootstrapper.ir/) in RTL direction. (English docs)
 - Visit [example pages<sup>3</sup>](http://example.bootstrapper.ir/) in RTL direction.
 
@@ -96,7 +96,7 @@ Read the [Getting started page](https://getbootstrap.com/docs/4.3/getting-starte
 ## Status
 
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com/)
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap/v4-dev.svg)](https://travis-ci.org/twbs/bootstrap)
+![Build Status](https://action-badges.now.sh/twbs/bootstrap)
 [![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
 [![Gem version](https://img.shields.io/gem/v/bootstrap.svg)](https://rubygems.org/gems/bootstrap)
 [![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue.svg)](https://atmospherejs.com/twbs/bootstrap)
