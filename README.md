@@ -1,5 +1,5 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 14 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.14-dist.zip)
+- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 15 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.15-dist.zip)
 - Visit [full documentaions<sup>2</sup>](http://docs.bootstrapper.ir/) in RTL direction. (English docs)
 - Visit [example pages<sup>3</sup>](http://example.bootstrapper.ir/) in RTL direction.
 

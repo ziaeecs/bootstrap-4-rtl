@@ -8,7 +8,8 @@
 kbd,
 code,
 .bd-content-title,
-.toc-entry a {
+.toc-entry a,
+.bd-example.ltr pre {
   direction: ltr;
 
   &::before {

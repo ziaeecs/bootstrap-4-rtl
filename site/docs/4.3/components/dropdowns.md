@@ -563,9 +563,6 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
   </div>
 
   <div class="btn-group dropright">
-    <button type="button" class="btn btn-secondary">
-      Split dropright
-    </button>
     <button type="button" 
             class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
             data-toggle="dropdown" 
@@ -580,6 +577,9 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
+    <button type="button" class="btn btn-secondary">
+      Split dropright
+    </button>
   </div>
 </div>
 
@@ -600,9 +600,6 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
 
 <!-- Split dropright button -->
 <div class="btn-group dropright">
-  <button type="button" class="btn btn-secondary">
-    Split dropright
-  </button>
   <button type="button" 
           class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
           data-toggle="dropdown" 
@@ -613,6 +610,9 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
   <div class="dropdown-menu">
     <!-- Dropdown menu links -->
   </div>
+  <button type="button" class="btn btn-secondary">
+    Split dropright
+  </button>
 </div>
 {% endhighlight %}
 
@@ -639,6 +639,9 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
   </div>
 
   <div class="btn-group">
+    <button type="button" class="btn btn-secondary">
+      Split dropleft
+    </button>
     <div class="btn-group dropleft" role="group">
       <button type="button" 
               class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
@@ -655,9 +658,6 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
         <a class="dropdown-item" href="#">Separated link</a>
       </div>
     </div>
-    <button type="button" class="btn btn-secondary">
-      Split dropleft
-    </button>
   </div>
 </div>
 
@@ -1076,6 +1076,12 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>string</td>
       <td>'dynamic'</td>
       <td>By default, we use Popper.js for dynamic positioning. Disable this with <code>static</code>.</td>
+    </tr>
+    <tr>
+      <td>popperConfig</td>
+      <td>null | object</td>
+      <td>null</td>
+      <td>To change Bootstrap's default Popper.js config, see <a href="https://popper.js.org/popper-documentation.html#Popper.Defaults">Popper.js's configuration</a></td>
     </tr>
   </tbody>
 </table>

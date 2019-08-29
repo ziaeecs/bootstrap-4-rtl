@@ -149,7 +149,7 @@ For simpler styling, clear hierarchy, and better spacing, description lists have
 
 The `<pre>` element is reset to remove its `margin-top` and use `rem` units for its `margin-bottom`.
 
-<div class="bd-example">
+<div class="bd-example ltr text-left">
 <pre>
 .example-element {
   margin-bottom: 1rem;
