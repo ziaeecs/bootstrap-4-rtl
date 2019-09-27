@@ -14,12 +14,7 @@
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
@@ -69,32 +64,9 @@ h6 {
   flex: 0 0 auto;
 }
 
-.h-250 {
-  height: 250px;
-}
+.h-250 { height: 250px; }
 @media (min-width: 768px) {
-  .h-md-250 {
-    height: 250px;
-  }
-}
-
-/*
- * Blog name and description
- */
-.blog-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400;
-}
-.blog-description {
-  font-size: 1.1rem;
-  color: #999;
-}
-
-@media (min-width: 40em) {
-  .blog-title {
-    font-size: 3.5rem;
-  }
+  .h-md-250 { height: 250px; }
 }
 
 /* Pagination */

@@ -33,8 +33,8 @@ social_image_path:  /docs/4.3/assets/brand/bootstrap-social.png
 social_logo_path:   /docs/4.3/assets/brand/bootstrap-social-logo.png
 
 # Custom variables
-current_version:      "4.3.1 RTL rev. 15" #4.3.1 #rtl
-current_ruby_version: "4.3.1 RTL rev. 15" #4.3.1 #rtl
+current_version:      "4.3.1 RTL rev. 16" #4.3.1 #rtl
+current_ruby_version: "4.3.1 RTL rev. 16" #4.3.1 #rtl
 docs_version:         4.3
 repo:                 "https://github.com/PerseusTheGreat/bootstrap-4-rtl" #"https://github.com/twbs/bootstrap" #rtl
 slack:                "https://bootstrap-slack.herokuapp.com"
@@ -45,7 +45,7 @@ themes:               "https://themes.getbootstrap.com"
 
 download:
   source:           "https://github.com/PerseusTheGreat/bootstrap-4-rtl/" #"https://github.com/twbs/bootstrap/archive/v4.3.1.zip" #rtl
-  dist:             "http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.15-dist.zip" #"https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip" #rtl
+  dist:             "http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.16-dist.zip" #"https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip" #rtl
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes

@@ -292,7 +292,7 @@ We use a subset of all colors to create a smaller color palette for generating c
 <div class="row">
   {% for color in site.data.theme-colors %}
     <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-{{ color.name }}">{{ color.name | capitalize }}</div>
+      <div class="p-3 mb-3 bg-{{ color.name }} {% if color.name == "light" or color.name == "warning" %}text-dark{% else %}text-white{% endif %}">{{ color.name | capitalize }}</div>
     </div>
   {% endfor %}
 </div>
@@ -375,7 +375,7 @@ Should you need to modify your `$grid-breakpoints`, your changes will apply to a
 
 ## CSS variables
 
-Bootstrap 4 includes around two dozen [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) in its compiled CSS. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser's Inspector, a code sandbox, or general prototyping.
+Bootstrap 4 includes around two dozen [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) in its compiled CSS. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser's Inspector, a code sandbox, or general prototyping.
 
 ### Available variables
 
@@ -409,7 +409,7 @@ Here are the variables we include (note that the `:root` is required). They're l
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 {% endhighlight %}

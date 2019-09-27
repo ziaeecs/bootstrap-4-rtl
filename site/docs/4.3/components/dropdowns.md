@@ -562,20 +562,22 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
     </div>
   </div>
 
-  <div class="btn-group dropright">
-    <button type="button" 
-            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-            data-toggle="dropdown" 
-            aria-haspopup="true" 
-            aria-expanded="false">
-      <span class="sr-only">Toggle Dropright</span>
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+  <div class="btn-group">
+    <div class="btn-group dropright" role="group">
+      <button type="button" 
+              class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false">
+        <span class="sr-only">Toggle Dropright</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
     </div>
     <button type="button" class="btn btn-secondary">
       Split dropright
@@ -599,16 +601,18 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
 </div>
 
 <!-- Split dropright button -->
-<div class="btn-group dropright">
-  <button type="button" 
-          class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-          data-toggle="dropdown" 
-          aria-haspopup="true" 
-          aria-expanded="false">
-    <span class="sr-only">Toggle Dropright</span>
-  </button>
-  <div class="dropdown-menu">
-    <!-- Dropdown menu links -->
+<div class="btn-group">
+  <div class="btn-group dropright" role="group">
+    <button type="button" 
+            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+            data-toggle="dropdown" 
+            aria-haspopup="true" 
+            aria-expanded="false">
+      <span class="sr-only">Toggle Dropright</span>
+    </button>
+    <div class="dropdown-menu">
+      <!-- Dropdown menu links -->
+    </div>
   </div>
   <button type="button" class="btn btn-secondary">
     Split dropright
