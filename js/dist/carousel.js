@@ -421,8 +421,6 @@
           event.preventDefault();
           this.next();
           break;
-
-        default:
       }
     };
 

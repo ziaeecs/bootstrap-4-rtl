@@ -3,7 +3,6 @@
 /site/.jekyll-metadata
 /site/docs/**/dist/
 # Hugo folders
-/site/static/**/dist/
 /resources/
 
 # Ignore ruby/bundler files
@@ -45,3 +44,4 @@ Thumbs.db
 /js/coverage/
 /node_modules/
 /.github/workflows/
+/site/.jekyll-cache/
