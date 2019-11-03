@@ -7,7 +7,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('popper.js'), require('./util.js')) :
   typeof define === 'function' && define.amd ? define(['jquery', 'popper.js', './util.js'], factory) :
   (global = global || self, global.Tooltip = factory(global.jQuery, global.Popper, global.Util));
-}(this, function ($, Popper, Util) { 'use strict';
+}(this, (function ($, Popper, Util) { 'use strict';
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Popper = Popper && Popper.hasOwnProperty('default') ? Popper['default'] : Popper;
@@ -925,5 +925,5 @@
 
   return Tooltip;
 
-}));
+})));
 //# sourceMappingURL=tooltip.js.map

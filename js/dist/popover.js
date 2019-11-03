@@ -7,7 +7,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./tooltip.js')) :
   typeof define === 'function' && define.amd ? define(['jquery', './tooltip.js'], factory) :
   (global = global || self, global.Popover = factory(global.jQuery, global.Tooltip));
-}(this, function ($, Tooltip) { 'use strict';
+}(this, (function ($, Tooltip) { 'use strict';
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Tooltip = Tooltip && Tooltip.hasOwnProperty('default') ? Tooltip['default'] : Tooltip;
@@ -271,5 +271,5 @@
 
   return Popover;
 
-}));
+})));
 //# sourceMappingURL=popover.js.map

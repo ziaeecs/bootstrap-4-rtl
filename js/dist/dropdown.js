@@ -7,7 +7,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('popper.js'), require('./util.js')) :
   typeof define === 'function' && define.amd ? define(['jquery', 'popper.js', './util.js'], factory) :
   (global = global || self, global.Dropdown = factory(global.jQuery, global.Popper, global.Util));
-}(this, function ($, Popper, Util) { 'use strict';
+}(this, (function ($, Popper, Util) { 'use strict';
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Popper = Popper && Popper.hasOwnProperty('default') ? Popper['default'] : Popper;
@@ -535,7 +535,9 @@
         return;
       }
 
-      var items = [].slice.call(parent.querySelectorAll(Selector.VISIBLE_ITEMS));
+      var items = [].slice.call(parent.querySelectorAll(Selector.VISIBLE_ITEMS)).filter(function (item) {
+        return $(item).is(':visible');
+      });
 
       if (items.length === 0) {
         return;
@@ -610,5 +612,5 @@
 
   return Dropdown;
 
-}));
+})));
 //# sourceMappingURL=dropdown.js.map

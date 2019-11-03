@@ -7,7 +7,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js')) :
   typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) :
   (global = global || self, global.ScrollSpy = factory(global.jQuery, global.Util));
-}(this, function ($, Util) { 'use strict';
+}(this, (function ($, Util) { 'use strict';
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Util = Util && Util.hasOwnProperty('default') ? Util['default'] : Util;
@@ -385,5 +385,5 @@
 
   return ScrollSpy;
 
-}));
+})));
 //# sourceMappingURL=scrollspy.js.map
