@@ -1,11 +1,11 @@
 # Bootstrap 4 RTL
-- Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~<sup>1</sup>) + RTL 4.3.1 rev. 18 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.18-dist.zip)
-- Visit [full documentaions<sup>2</sup>](http://docs.bootstrapper.ir/) in RTL direction. (English docs)
-- Visit [example pages<sup>3</sup>](http://example.bootstrapper.ir/) in RTL direction.
+- Latest dist.: [Version 4.4.1 (Official) + RTL 4.4.1 rev. 1 (Unofficial)](http://bootstrapper.ir/archive/bootstrap-4.4.1-plus-rtl-rev.1-dist.zip)
+- Visit [full documentaions<sup>1</sup>](http://docs.bootstrapper.ir/) in RTL direction. (English docs)
+- Visit [example pages<sup>2</sup>](http://example.bootstrapper.ir/) in RTL direction.
 
-## RTL Hints:
+## Hints:
   - Use this package like official package.
-  - Use `<html ... dir="rtl" ... >` for correct PRINT layout and also, because of MS IE/EDGE layout engine RTL capabilities.
+  - Use `<html ... dir="rtl" ... >` for correct PRINT layout and also, because of MS IE (10-11) / EDGE (12-18) / EDGE (chromium) layout engine RTL capabilities.
   - Use UTF-8 encoding.
   - Always follow XHTML rules.
 
@@ -13,7 +13,7 @@
   - Install with [npm](https://www.npmjs.com/): `npm i @laylazi/bootstrap-rtl`
   - Reference to latest version/revision on UNPKG CDN: [https://unpkg.com/@laylazi/bootstrap-rtl/](https://unpkg.com/@laylazi/bootstrap-rtl/)
 
-## In case of adapting/converting Bootstrap&copy; 4.x templates:  
+## In case of adapting/converting Bootstrap&copy; 4.x templates:
   - Replace all official `bootstrap.css` references by `bootstrap-rtl.css` in all HTML files.
   - Inside every HTML file, find these direction specific CSS class names and change them:
     - from `border-left` to `border-right` and vice versa.
@@ -28,21 +28,18 @@
     - from `dropdown-menu-left` to `dropdown-menu-right` and vice versa.
     - from `dropdown-menu-*-left` to `dropdown-menu-*-right` and vice versa.
   - Also, to correct **Popovers** / **Tooltips** direction, change all `data-placement="left"` to `data-placement="right"` and vice versa.
-  - After that, use [RTLCSS<sup>4</sup>](https://rtlcss.com/playground/) to adapt / convert all customized css codes to RTL edition.
+  - After that, use [RTLCSS<sup>3</sup>](https://rtlcss.com/playground/) to adapt / convert all customized css codes to RTL edition.
 
-## Important:
-  1.  As you know, [TWBS](https://github.com/twbs/bootstrap) had changed their policies about development and maintenance of version 4.x and they will merge shipped changes in official `v4-dev` branch. Because of their unplanned merges, next RTL revisions will not have been provided weekly. 😞
-  2. [RTL documentations](http://docs.bootstrapper.ir/) is now online. 😈😎
-      - RTL docs have been tested on IE 11, Edge 18, latest Edge insider (Dev & Canary channels), latest Firefox, and latest Chrome.
-      - Edge 12-18 has issues about RTL direction and sticky position
-      - ~~New chromium based Edge (Dev and Canary channels) have an issues about RTL direction and flexbox layouts.~~ [it is resolved now](https://techcommunity.microsoft.com/t5/Discussions/Bug-Edge-Dev-FlexBox-RTL-Direction-Incorrect-Layout/m-p/714493).
-      - Documentation layouts have ~~not~~ been reviewed completely and it is ~~in progress~~ done!
-  3. [RTL docs](http://docs.bootstrapper.ir/) and [RTL example pages](http://example.bootstrapper.ir/) ~~will be~~ are combined ~~ASAP~~ now.
-  4. [RTLCSS](https://github.com/MohammadYounes/rtlcss) is an impressive tool 🤯 created by [Mohammad Younes](https://github.com/MohammadYounes).
+## Footnotes:
+  1. [RTL documentations](http://docs.bootstrapper.ir/) is now online. 😈😎
+      - RTL docs have been tested on MS IE 11, MS Edge 18, latest [MS Edge insider](https://www.microsoftedgeinsider.com/) (chromium based), latest Firefox, and latest Chrome.
+      - MS Edge (12-18) has issues about RTL direction and sticky position. So, please use new [MS Edge insider](https://www.microsoftedgeinsider.com/) (chromium based) browser.
+  2. [RTL docs](http://docs.bootstrapper.ir/) and [RTL example pages](http://example.bootstrapper.ir/) repositories are combined.
+  3. [RTLCSS](https://github.com/MohammadYounes/rtlcss) is an impressive tool 🤯 created by [Mohammad Younes](https://github.com/MohammadYounes).
 ---
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="72" height="72">
+    <img src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="72" height="72">
   </a>
 </p>
 
@@ -51,7 +48,7 @@
 <p align="center">
   Sleek, intuitive, and powerful front-end framework for faster and easier web development.
   <br>
-  <a href="https://getbootstrap.com/docs/4.3/"><strong>Explore Bootstrap docs »</strong></a>
+  <a href="https://getbootstrap.com/docs/4.4/"><strong>Explore Bootstrap docs »</strong></a>
   <br>
   <br>
   <a href="https://github.com/twbs/bootstrap/issues/new?template=bug.md">Report bug</a>
@@ -83,14 +80,14 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.3.1.zip)
+- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.4.1.zip)
 - Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
 - Install with [npm](https://www.npmjs.com/): `npm install bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.3.1`
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.3.1`
+- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.4.1`
+- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.4.1`
 - Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
 
-Read the [Getting started page](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](https://getbootstrap.com/docs/4.4/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
 
 ## Status
@@ -155,11 +152,11 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
 
-Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/docs/4.3/assets/js/src/search.js` file.
+Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/docs/4.4/assets/js/src/search.js` file.
 
 ### Running documentation locally
 
-1. Run through the [tooling setup](https://getbootstrap.com/docs/4.3/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+1. Run through the [tooling setup](https://getbootstrap.com/docs/4.4/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
 2. Run `npm install` to install Node.js dependencies.
 3. Run `npm start` to compile CSS and JavaScript files, generate our docs, and watch for changes.
 4. Open `http://localhost:9001` in your browser, and voilà.
