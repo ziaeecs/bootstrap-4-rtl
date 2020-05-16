@@ -17,3 +17,13 @@
   code: ja
   description: Bootstrap 4 日本語リファレンス
   url: https://getbootstrap.jp/
+
+- name: Korean
+  code: ko
+  description: Bootstrap 4 한국어 문서
+  url: https://getbootstrap.kr/
+
+- name: Right To Left
+  code: en-US
+  description: Bootstrap 4 RTL
+  url: http://bootstrapper.ir/
