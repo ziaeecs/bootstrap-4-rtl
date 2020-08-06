@@ -1,11 +1,12 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.5.0): carousel.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Bootstrap (v4.5.1): carousel.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
 import $ from 'jquery'
+import Rtl from './rtl' // rtl
 import Util from './util'
 
 /**
@@ -15,7 +16,7 @@ import Util from './util'
  */
 
 const NAME                   = 'carousel'
-const VERSION                = '4.5.0'
+const VERSION                = '4.5.1'
 const DATA_KEY               = 'bs.carousel'
 const EVENT_KEY              = `.${DATA_KEY}`
 const DATA_API_KEY           = '.data-api'
@@ -238,6 +239,8 @@ class Carousel {
 
     this.touchDeltaX = 0
 
+    // rtl begin
+    /*
     // swipe left
     if (direction > 0) {
       this.prev()
@@ -247,6 +250,26 @@ class Carousel {
     if (direction < 0) {
       this.next()
     }
+    */
+
+    // swipe left
+    if (direction > 0) {
+      if (Rtl.isDocumentInRtlDirection) {
+        this.next()
+      } else {
+        this.prev()
+      }
+    }
+
+    // swipe right
+    if (direction < 0) {
+      if (Rtl.isDocumentInRtlDirection) {
+        this.prev()
+      } else {
+        this.next()
+      }
+    }
+  // rtl end
   }
 
   _addEventListeners() {

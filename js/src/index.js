@@ -5,6 +5,7 @@ import Collapse from './collapse'
 import Dropdown from './dropdown'
 import Modal from './modal'
 import Popover from './popover'
+import Rtl from './rtl' //  rtl
 import Scrollspy from './scrollspy'
 import Tab from './tab'
 import Toast from './toast'
@@ -13,13 +14,14 @@ import Util from './util'
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.5.0): index.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Bootstrap (v4.5.1): index.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
 export {
   Util,
+  Rtl, //  rtl
   Alert,
   Button,
   Carousel,
