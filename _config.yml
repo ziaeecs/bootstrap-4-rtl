@@ -36,8 +36,8 @@ social_image_path:  /docs/4.5/assets/brand/bootstrap-social.png
 social_logo_path:   /docs/4.5/assets/brand/bootstrap-social-logo.png
 
 # Custom variables
-current_version:      "4.5.1 RTL rev. 1" #rtl
-current_ruby_version: "4.5.1 RTL rev. 1" #rtl
+current_version:      "4.5.2 RTL rev. 1" #rtl
+current_ruby_version: "4.5.2 RTL rev. 1" #rtl
 docs_version:         4.5
 github_org:           "https://github.com/twbs"
 repo:                 "https://github.com/PerseusTheGreat/bootstrap-4-rtl" #rtl
@@ -50,17 +50,17 @@ icons:                "https://icons.getbootstrap.com"
 
 download:
   source:           "https://github.com/PerseusTheGreat/bootstrap-4-rtl/" #rtl
-  dist:             "http://bootstrapper.ir/archive/bootstrap-4.5.1-plus-rtl-rev.1-dist.zip" #rtl
-  dist_examples:    "http://bootstrapper.ir/archive/bootstrap-4.5.1-plus-rtl-rev.1-examples.zip"
+  dist:             "http://bootstrapper.ir/archive/bootstrap-4.5.2-plus-rtl-rev.1-dist.zip" #rtl
+  dist_examples:    "http://bootstrapper.ir/archive/bootstrap-4.5.2-plus-rtl-rev.1-examples.zip"
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
-  css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-  css_hash:         "sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
-  js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
-  js_hash:          "sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
-  js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.bundle.min.js"
-  js_bundle_hash:   "sha384-FxkQtQ8fW6C3xA7BoW8ocAb2N7U9dCA7ZJXMJlz/37PL6Q6PUGQ5ZeJcaXdYKcdJ"
+  css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  css_hash:         "sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  js_hash:          "sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  js_bundle:        "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+  js_bundle_hash:   "sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
   jquery:           "https://code.jquery.com/jquery-3.5.1.slim.min.js"
   jquery_hash:      "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
   popper:           "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
