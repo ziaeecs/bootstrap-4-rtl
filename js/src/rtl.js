@@ -1,13 +1,22 @@
-import $ from 'jquery'
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.5.3): rtl.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Document Direction Detector
+ * Used in Carousel.js to correct touch experience
+ * --------------------------------------------------------------------------
+ */
 
-let isDocumentInRtlDirection = false
-
-const documentDirection = $('html').attr('dir')
+let documentDirectionIsRtl = false
+const htmlElement = document.getElementsByTagName('html')[0]
+const htmlElementStyleDir = window.getComputedStyle(htmlElement).direction || ''
+const htmlElementAttributeDir = htmlElement.getAttribute('dir') || ''
+const documentDirection = htmlElementStyleDir || htmlElementAttributeDir
 
 if (documentDirection && documentDirection.trim().toLowerCase() === 'rtl') {
-  isDocumentInRtlDirection = true
+  documentDirectionIsRtl = true
 }
 
 export default {
-  isDocumentInRtlDirection
+  documentDirectionIsRtl
 }

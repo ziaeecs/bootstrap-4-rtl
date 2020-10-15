@@ -1189,9 +1189,9 @@ When you are using a small or large input group or customizing the default `bord
 
 {% highlight css %}
 /* Change values to match the radius of your form control */
-.fix-rounded-right {
-  border-top-right-radius: .2rem !important;
-  border-bottom-right-radius: .2rem !important;
+.fix-rounded-left {
+  border-top-left-radius: .2rem !important;
+  border-bottom-left-radius: .2rem !important;
 }
 {% endhighlight %}
 

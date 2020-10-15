@@ -44,8 +44,8 @@
 
     // Modal relatedTarget demo
     $('#exampleModal').on('show.bs.modal', function (event) {
-      var $button = $(event.relatedTarget)      // Button that triggered the modal
-      var recipient = $button.data('whatever')  // Extract info from data-* attributes
+      var $button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = $button.data('whatever') // Extract info from data-* attributes
       // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
       // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
       var $modal = $(this)
@@ -103,11 +103,11 @@
 
     anchors.options = {
       icon: '#',
-      placement: 'left' //rtl
+      placement: 'left' // rtl
     }
     anchors.add('.bd-content > h2, .bd-content > h3, .bd-content > h4, .bd-content > h5')
     $('.bd-content').children('h2, h3, h4, h5').wrapInner('<span class="bd-content-title"></span>')
 
     bsCustomFileInput.init()
   })
-}(jQuery))
+})(jQuery)

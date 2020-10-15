@@ -3,51 +3,47 @@
 /*!
  * Script to create the built examples zip archive;
  * requires the `zip` command to be present!
- * Copyright 2020 The Bootstrap Authors
+ * Copyright 2020 The Bootstrap Authors & Arash Laylazi
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
 'use strict'
 
+const path = require('path')
 const shell = require('shelljs')
+
+const {
+  version, version_short: versionShort
+} = require('../package.json')
+
+const folderName = `bootstrap-${version}-examples`
+
 shell.config.fatal = true
 
 if (!shell.test('-d', '_gh_pages')) {
   throw new Error('The "_gh_pages" folder does not exist, did you forget building the docs?')
 }
 
-const path = require('path')
-
 // switch to the root dir
 shell.cd(path.join(__dirname, '..'))
 
-const {
-  version,
-  version_short: versionShort
-} = require('../package.json')
-
-const folderName = `bootstrap-${version}-examples`
-
 // remove any previously created folder with the same name
 shell.rm('-rf', folderName)
-
 // create any folders so that `cp` works
 shell.mkdir('-p', folderName)
 shell.mkdir('-p', `${folderName}/assets/brand/`)
 
 shell.cp('-Rf', `_gh_pages/docs/${versionShort}/examples/*`, folderName)
 shell.cp('-Rf', `_gh_pages/docs/${versionShort}/dist/`, `${folderName}/assets/`)
-
 // also copy the two brand images we use in the examples
 shell.cp('-f', [
   `_gh_pages/docs/${versionShort}/assets/brand/bootstrap-outline.svg`,
   `_gh_pages/docs/${versionShort}/assets/brand/bootstrap-solid.svg`
 ], `${folderName}/assets/brand/`)
-
 shell.rm(`${folderName}/index.html`)
 
 // get all examples' HTML files
-shell.find(`${folderName}/**/*.html`).forEach((file) => {
+shell.find(`${folderName}/**/*.html`).forEach(file => {
   const fileContents = shell.cat(file)
     .toString()
     .replace(new RegExp(`"/docs/${versionShort}/`, 'g'), '"../')
@@ -82,4 +78,3 @@ shell.exec(deleteCommand, (code, stdout, stderr) => {
     shell.exit(1)
   }
 })
-
