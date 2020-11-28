@@ -42,8 +42,8 @@
 
   > .form-control,
   > .custom-select {
-    &:not(:last-child) { @include border-left-radius(0); } //rtl
-    &:not(:first-child) { @include border-right-radius(0); } //rtl
+    &:not(:last-child) { @include border-right-radius(0); } //rtl
+    &:not(:first-child) { @include border-left-radius(0); } //rtl
   }
 
   // Custom file inputs have more complex markup, thus requiring different
@@ -53,8 +53,8 @@
     align-items: center;
 
     &:not(:last-child) .custom-file-label,
-    &:not(:last-child) .custom-file-label::after { @include border-left-radius(0); } //rtl
-    &:not(:first-child) .custom-file-label { @include border-right-radius(0); } //rtl
+    &:not(:last-child) .custom-file-label::after { @include border-right-radius(0); } //rtl
+    &:not(:first-child) .custom-file-label { @include border-left-radius(0); } //rtl
   }
 }
 
@@ -179,7 +179,8 @@
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
-  @include border-left-radius(0); //rtl
+  //@include border-left-radius(0); //rtl
+  @include border-right-radius(0); //rtl
 }
 
 .input-group > .input-group-append > .btn,
@@ -188,5 +189,6 @@
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
-  @include border-right-radius(0); //rtl
+  //@include border-right-radius(0); //rtl
+  @include border-left-radius(0); //rtl
 }
